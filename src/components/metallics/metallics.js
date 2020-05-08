@@ -1,33 +1,63 @@
 export const metallics = [
+
 	//Arabian
-	// { type: 'SP', number: 113, patterns: 'Arabian' },
+	{ type: 'PB', number: '05', patterns: 'Arabian', color: 'Black' },
+	{ type: 'PB', number: '09', patterns: 'Arabian', color: 'Sky Blue' },
+	{ type: 'PB', number: '35', patterns: 'Arabian', color: 'Dark Gold' },
+	{ type: 'PB', number: '47', patterns: 'Arabian', color: 'Ice' },
 
-	// //Consololation
-	// { type: 'SP', number: 113, patterns: 'Consolation' },
+	//Consololation
+	{ type: 'PB', number: '02', patterns: 'Consolation', color: 'Arctic Gold' },
+	{ type: 'PB', number: '20', patterns: 'Consolation', color: 'Green' },
 
-	// //Dragonfly Tile
-	// { type: 'SP', number: 113, patterns: 'Dragonfly Tile' },
+	//Dragonfly Tile
+	{ type: 'PB', number: '35', patterns: 'Dragonfly Tile', color: 'Dark Gold' },
+	{ type: 'SP', number: '018', patterns: 'Dragonfly Tile' },
 
-	// //Fairy Flora
-	// { type: 'SP', number: 113, patterns: 'Fairy Flora' },
+	//Fairy Flora
+	{ type: 'PB', number: '01', patterns: 'Fairy Flora', color: 'Bright Gold' },
+	{ type: 'PB', number: '04', patterns: 'Fairy Flora', color: 'Silver' },
+	{ type: 'SP', number: '047', patterns: 'Fairy Flora', color: 'Fosty Sparkle' },
 
-	// //French Kitchen Garden
-	// { type: 'SP', number: 113, patterns: 'French Kitchen Garden' },
+	//French Kitchen Garden
+	{ type: 'PB', number: '05', patterns: 'French Kitchen Garden', color: 'Black' },
+	{ type: 'PB', number: '25', patterns: 'French Kitchen Garden', color: 'Old Gld' },
+	{ type: 'SP', number: '051', patterns: 'French Kitchen Garden' },
+	{ type: 'SP', number: '068', patterns: 'French Kitchen Garden' },
 
-	// //Hanging Gardens
-	// { type: 'SP', number: 113, patterns: 'Hanging Gardens' },
+	//Gothic Arch
+	{ type: 'PB', number: '36', patterns: 'Gothic Arch', color: 'Antique Gold' },
+	{ type: 'PB', number: '54', patterns: 'Gothic Arch', color: 'Vatican Gold' },
+	{ type: 'PB', number: '59', patterns: 'Gothic Arch', color: 'Black Silver' },
+	{ type: 'SP', number: '018', patterns: 'Gothic Arch' },
+	{ type: 'SP', number: '113', patterns: 'Gothic Arch' },
+	{ type: 'SP', number: '119', patterns: 'Gothic Arch' },
+	{ type: 'SP', number: '139', patterns: 'Gothic Arch' },
+	{ type: 'SP', number: '183', patterns: 'Gothic Arch' },
 
-	// //Hummingbird Tile
-	// { type: 'SP', number: 113, patterns: 'Hummingbird Tile' },
+	//Hanging Gardens
+	{ type: 'PB', number: '01', patterns: 'Hanging Gardens', color: 'Bright Gold' },
+	{ type: 'PB', number: '08', patterns: 'Hanging Gardens', color: 'Blue' },
+	{ type: 'PB', number: '26', patterns: 'Hanging Gardens', color: 'Aztec Gold' },
+	{ type: 'PB', number: '36', patterns: 'Hanging Gardens', color: 'Antique Gold' },
+	{ type: 'PB', number: '17', patterns: 'Hanging Gardens', color: 'Water Blue' },
 
-	// //Hydrangea
-	// { type: 'SP', number: 113, patterns: 'Hydrangea' },
+	//Hummingbird Tile
+	{ type: 'PB', number: '35', patterns: 'Hummingbird Tile', color: 'Dark Gold' },
+	{ type: 'SP', number: '018', patterns: 'Hummingbird Tile' },
 
-	// //Little Tuscany
-	// { type: 'SP', number: 113, patterns: 'Little Tuscany' },
+	//Hydrangea
+	{ type: 'PB', number: '02', patterns: 'Hydrangea', color: 'Arctic Gold' },
+	{ type: 'PB', number: '21', patterns: 'Hydrangea', color: 'Copper' },
+	{ type: 'PB', number: '58', patterns: 'Hydrangea', color: 'Antique Silver' },
 
-	// //Mini Mandelas
-	// { type: 'SP', number: 113, patterns: 'Mini Mandelas' },
+	//Little Tuscany
+	{ type: 'PB', number: '01', patterns: 'Little Tuscany', color: "Bright Gold" },
+	{ type: 'SP', number: '038', patterns: 'Little Tuscany' },
+
+	//Mini Mandelas
+	{ type: 'PB', number: '26', patterns: 'Mini Mandelas', color: 'Aztec Gold' },
+	{ type: 'PB', number: '32', patterns: 'Mini Mandelas', color: 'Pewter' },
 
 	//Moss Garden
 	{ type: 'PB', number: '04', patterns: 'Moss Garden', color: 'Silver' },
@@ -40,14 +70,21 @@ export const metallics = [
 	{ type: 'SP', number: '035', patterns: 'Moss Garden' },
 	{ type: 'SP', number: 113, patterns: 'Moss Garden' },
 
-	// //Peacock Tile
-	// { type: 'SP', number: 113, patterns: 'Peacock Tile' },
+	//Peacock Tile
+	{ type: 'PB', number: '43', patterns: 'Peacock Tile', color: 'Turquoise' },
+	{ type: 'PB', number: '35', patterns: 'Peacock Tile', color: 'Dark Gold' },
+	{ type: 'PB', number: '20', patterns: 'Peacock Tile', color: 'Green' },
+	{ type: 'SP', number: '018', patterns: 'Peacock Tile' },
+	{ type: 'SP', number: '113', patterns: 'Peacock Tile' },
 
-	// //Persian Iris
-	// { type: 'SP', number: 113, patterns: 'Persian Iris' },
+	//Persian Iris
+	{ type: 'PB', number: '09', patterns: 'Persian Iris', color: 'Sky Blue' },
+	{ type: 'PB', number: '35', patterns: 'Persian Iris', color: 'Dark Gold' },
+	{ type: 'PB', number: '40', patterns: 'Persian Iris', color: 'Egyptian Gold' },
+	{ type: 'PH', number: '01', patterns: 'Persian Iris', color: 'Hi Gloss Gold' },
+	{ type: 'SP', number: '010', patterns: 'Persian Iris' },
 
-	// //Rainforest
-
+	//Rainforest
 	{ type: 'PB', number: '05', patterns: 'Rainforest', color: 'Black' },
 	{ type: 'PB', number: '06', patterns: 'Rainforest', color: 'Green' },
 	{ type: 'PB', number: 26, patterns: 'Rainforest', color: 'Aztec Gold' },
@@ -93,9 +130,15 @@ export const metallics = [
 	{ type: 'SP', number: '060', patterns: 'Tinctorium' },
 	{ type: 'SP', number: '069', patterns: 'Tinctorium' },
 
-	// //Vineyard
-	// { type: 'SP', number: 113, patterns: 'Vineyard' },
+	//Vineyard
+	{ type: 'PB', number: '63', patterns: 'Vineyard', color: 'Deep Midnight Blue' },
+	{ type: 'SP', number: '013', patterns: 'Vineyard' },
+	{ type: 'SP', number: '032', patterns: 'Vineyard' },
+	{ type: 'SP', number: '035', patterns: 'Vineyard' },
+	{ type: 'SP', number: '061', patterns: 'Vineyard' },
+	{ type: 'SP', number: '064', patterns: 'Vineyard' },
+	{ type: 'SP', number: 113, patterns: 'Vineyard' },
 
-	// //Watergarden
+	//Watergarden
 	{ type: 'PB', number: '01', patterns: 'Watergarden', color: 'Gold' }
 ];
