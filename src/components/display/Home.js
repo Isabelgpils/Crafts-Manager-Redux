@@ -7,7 +7,7 @@ const Home = () => {
 		<Fragment>
 			<div style={{ height: '600px' }} className="parallax-container">
 				<div className="parallax">
-					<img src={dragonfly} />
+					<img src={dragonfly} alt="dragonfly cross stitch" />
 				</div>
 			</div>
 			<div style={{ color: 'white', margin: 'center', height: '180px' }} className="dark teal">
@@ -18,7 +18,7 @@ const Home = () => {
 			</div>
 			<div style={{ height: '500px' }} className="parallax-container">
 				<div className="parallax">
-					<img src={dragonfly} />
+					<img src={dragonfly} alt="dragonfly cross stitch" />
 				</div>
 			</div>
 
