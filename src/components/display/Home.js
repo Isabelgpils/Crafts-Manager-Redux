@@ -6,9 +6,9 @@ import dmcPic2 from './mel-poole-4J1sjmMr0Ro-unsplash.jpg'
 const Home = () => {
 	return (
 		<Fragment>
-			<div style={{ height: '600px' }} className="parallax-container">
+			<div style={{ height: '800px' }} className="parallax-container">
 				<div className="parallax">
-					<img src={dragonfly} alt="dragonfly cross stitch" />
+					<img src={dmcPic} alt="dmc thread" />
 					{/* Photo by Mel Poole on Unsplash */}
 				</div>
 			</div>
@@ -25,7 +25,7 @@ const Home = () => {
 			</div>
 			<div style={{ height: '500px' }} className="parallax-container">
 				<div className="parallax">
-					<img src={dmcPic} alt="dragonfly cross stitch" />
+					<img src={dragonfly} alt="dragonfly cross stitch" />
 				</div>
 			</div>
 
