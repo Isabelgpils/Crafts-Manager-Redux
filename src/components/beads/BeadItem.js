@@ -14,9 +14,9 @@ const BeadItem = (props) => {
 							style={{ margin: 'auto' }}
 						/>
 						<h6>Pattern: {props.patterns}</h6>
-
-						<button className="ui small lightgrey button">Need</button>
-						<button className="ui small ligtgrey button">Have</button>
+						{/* 
+						<button className="ui small lightgrey button">Have</button>
+						<button className="ui small ligtgrey button">Need</button> */}
 					</div>
 				</div>
 			</div>

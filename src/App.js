@@ -1,4 +1,4 @@
-import React, {useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Fragment } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import 'materialize-css/dist/css/materialize.min.css';
@@ -68,9 +68,6 @@ const App = () => {
 						</div>
 					</div>
 				</Route>
-				{/* <Route path="/SearchAll">
-					<SearchAll />
-				</Route> */}
 			</Switch>
 		</Fragment>
 	);

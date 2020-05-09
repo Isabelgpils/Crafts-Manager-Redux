@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const MetallicItem = (props) => {
-	const [ select, setSelected ] = useState(false);
+	const [select, setSelected] = useState(false);
 
 	const borderSize = select ? '8px solid green' : undefined;
 	return (
@@ -17,18 +17,19 @@ const MetallicItem = (props) => {
 							alt="metallics"
 							style={{ height: '15rem', width: '15rem', margin: 'auto' }}
 						/>
-
-						<button
-							className="ui teal button"
+						<h6>Pattern: {props.patterns}</h6>
+						{/* <button
+							className="ui lightgrey button"
 							onClick={() => {
 								console.log(`${props.number} was selected`);
 								setSelected(!select);
 							}}
 						>
-							In Stash
+							Have
 						</button>
-						<button className="ui grey button">Need</button>
-						<h6>Patterns: {props.patterns}</h6>
+						<button className="ui lightgrey button">Need</button> */}
+
+
 					</div>
 				</div>
 			</div>

@@ -2,23 +2,27 @@ import React, { useState } from 'react';
 // import { connect } from 'react-redux';
 
 const SilkItem = (props) => {
-	const [ select, setSelected ] = useState(false);
+	const [select, setSelected] = useState(false);
 
 	const borderSize = select ? '8px solid green' : undefined;
 
 	const fontColor = props.dark ? 'white' : 'lightBlack';
+	const cardColor = props.dmc === 'none' ? 'lightGrey' : `rgb(${props.rgb})`
+
 	// this will change the fontcolor
 	return (
-		<div>
-			<div style={{ marginTop: '30px' }} className="ui cards">
-				<div className="card" style={{ height: '300x', width: '250px', backgroundColor: `rgb(${props.rgb})` }}>
-					<div className="content" style={{ border: borderSize }}>
-						<h5 style={{ color: fontColor }}>{props.color}</h5>
-						<h5 style={{ color: fontColor }}>
-							{props.brand} {props.number}
-						</h5>
-						<h6 style={{ color: fontColor }}>DMC: {props.dmc}</h6>
-						<button
+		<div style={{ paddingRight: '1px', margin: '20px' }}>
+			<div className="ui cards">
+				<div className="card" style={{ height: '180px', width: '220px', backgroundColor: cardColor }}>
+					<div className="content">
+						<h6 style={{ color: fontColor }}>{props.brand} </h6>
+						{/* Change the text color to light */}
+						<h5 style={{ color: fontColor, fontFamily: 'Calibri' }}>{props.color}</h5>
+						<br />
+						<h6 style={{ color: fontColor }}>DMC substitute: {props.dmc}</h6>
+
+
+						{/* <button
 							className="ui teal button"
 							onClick={() => {
 								console.log(`${props.number} was selected`);
@@ -27,7 +31,7 @@ const SilkItem = (props) => {
 						>
 							Have
 						</button>
-						<button className="ui grey button">Need</button>
+						<button className="ui grey button">Need</button> */}
 					</div>
 				</div>
 			</div>

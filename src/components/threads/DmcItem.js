@@ -10,14 +10,14 @@ const DmcItem = (props) => {
 	return (
 		<div style={{ paddingRight: '1px', margin: '20px' }}>
 			<div className="ui cards">
-				<div className="card" style={{ height: '150px', width: '220px', backgroundColor: `rgb(${props.rgb})` }}>
+				<div className="card" style={{ height: '150px', width: '200px', backgroundColor: `rgb(${props.rgb})` }}>
 					<div className="content">
 						<h5 style={{ color: fontColor }}>{props.dmc}</h5>
 						{/* Change the text color to light */}
-						<h6 style={{ color: fontColor, fontFamily: 'Calibri' }}>{props.color}</h6>
+						<h6 style={{ color: fontColor }}>{props.color}</h6>
 
 						<br />
-						<button
+						{/* <button
 							className="ui primary button"
 							onClick={() => {
 								console.log(`${props.number} was selected`);
@@ -27,7 +27,7 @@ const DmcItem = (props) => {
 							Need
 						</button>
 
-						<button className="ui button">Have</button>
+						<button className="ui button">Have</button> */}
 					</div>
 				</div>
 			</div>
