@@ -8,7 +8,7 @@ const BeadList = ({ beads, selectBead, state, renderList }) => {
 			<div className="item" key={bead.number}>
 				<div className="right floated content">
 					<button
-						style={{ color: 'navy' }}
+						// style={{ color: 'navy' }}
 						className="ui button white"
 						onClick={() => selectBead(bead)}
 					>

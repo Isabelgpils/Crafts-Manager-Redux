@@ -7,8 +7,8 @@ const DmcList = ({ dmcs, selectDmc, state, renderList }) => {
 		return (
 			<div className="item" key={dmc.number}>
 				<div className="right floated content">
-					<button className="ui button primary" onClick={() => selectDmc(dmc)}>
-						Select
+					<button className="ui button" onClick={() => selectDmc(dmc)}>
+						View Detail
 						</button>
 				</div>
 				<div className="content" style={{ padding: '1rem', backgroundColor: `rgb(${dmc.rgb})` }}>
@@ -27,3 +27,5 @@ const mapStateToProps = (state) => {
 	return { dmcs: state.dmcs };
 };
 export default connect(mapStateToProps, { selectDmc: selectDmc })(DmcList);
+
+
