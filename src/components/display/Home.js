@@ -25,7 +25,7 @@ const Home = () => {
 			</div>
 			<div style={{ height: '500px' }} className="parallax-container">
 				<div className="parallax">
-					<img src={dragonfly} alt="dragonfly cross stitch" />
+					<img src={dmcPic} alt="dmc thread" />
 				</div>
 			</div>
 
