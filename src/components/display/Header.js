@@ -7,8 +7,8 @@ const Header = () => {
 			<div className="navbar-fixed">
 				<nav>
 					<div style={{ backgroundColor: 'teal' }} className="nav-wrapper">
-						<div style={{ marginLeft: '2px' }}>
-							<div className="brand-logo">
+						<div>
+							<div style={{ marginLeft: '10px' }} className="brand-logo">
 								My Craft Manager
 							</div>
 						</div>
@@ -17,13 +17,13 @@ const Header = () => {
 							<i className="material-icons">menu</i>
 						</a>
 						{/* hide on smaller screens */}
-						<ul className="right hide-on-med-and-down">
+						<ul className="right hide-on-med-and-down" style={{ margin: '5px' }} >
 							<li>
 								<Link to="/Home">Home</Link>
 							</li>
-							<li>
+							{/* <li>
 								<Link to="/SearchAll">Search All </Link>
-							</li>
+							</li> */}
 							<li>
 								<Link to="/DMC">DMC Thread</Link>
 							</li>
@@ -40,10 +40,10 @@ const Header = () => {
 								<Link to="/Patterns">Patterns</Link>
 							</li>
 							<li>
-								<Link to="/DMCRedux">DMC Redux</Link>
+								<Link to="/DMCRedux">My DMC</Link>
 							</li>
 							<li>
-								<Link to="/BeadsRedux">BeadsRedux</Link>
+								<Link to="/BeadsRedux">My Beads</Link>
 							</li>
 						</ul>
 					</div>
@@ -53,9 +53,9 @@ const Header = () => {
 					<li>
 						<Link to="/Home">Home</Link>
 					</li>
-					<li>
+					{/* <li>
 						<Link to="/SearchAll">Search All </Link>
-					</li>
+					</li> */}
 					<li>
 						<Link to="/DMC">DMC Thread</Link>
 					</li>
