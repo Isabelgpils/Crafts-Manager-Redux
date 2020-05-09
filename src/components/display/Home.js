@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import dragonfly from '../patterns/images/dragonfly2.jpg';
 import dmcPic from './karly-santiago-E7zsz8JA8FM-unsplash.jpg'
+import dmcPic2 from './mel-poole-4J1sjmMr0Ro-unsplash.jpg'
 
 const Home = () => {
 	return (
@@ -8,6 +9,7 @@ const Home = () => {
 			<div style={{ height: '600px' }} className="parallax-container">
 				<div className="parallax">
 					<img src={dragonfly} alt="dragonfly cross stitch" />
+					{/* Photo by Mel Poole on Unsplash */}
 				</div>
 			</div>
 			<div style={{ color: 'teal', margin: 'center', height: '300px' }} className="white">
@@ -23,7 +25,7 @@ const Home = () => {
 			</div>
 			<div style={{ height: '500px' }} className="parallax-container">
 				<div className="parallax">
-					<img src={dragonfly} alt="dragonfly cross stitch" />
+					<img src={dmcPic} alt="dragonfly cross stitch" />
 				</div>
 			</div>
 
