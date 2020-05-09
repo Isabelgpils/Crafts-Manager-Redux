@@ -13,10 +13,10 @@ const BeadItem = (props) => {
 							alt="beads"
 							style={{ margin: 'auto' }}
 						/>
-						<h6>Patterns: {props.patterns}</h6>
+						<h6>Pattern: {props.patterns}</h6>
 
-						<button className="ui small blue button">Need</button>
-						<button className="ui small teal button">Have</button>
+						<button className="ui small lightgrey button">Need</button>
+						<button className="ui small ligtgrey button">Have</button>
 					</div>
 				</div>
 			</div>
