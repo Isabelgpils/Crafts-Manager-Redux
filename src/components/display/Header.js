@@ -8,7 +8,7 @@ const Header = () => {
 				<nav>
 					<div style={{ backgroundColor: 'teal' }} className="nav-wrapper">
 						<div style={{ marginLeft: '2px' }}>
-							<a href="#!" className="brand-logo">
+							<a href="/" className="brand-logo">
 								My Craft Manager
 							</a>
 						</div>
