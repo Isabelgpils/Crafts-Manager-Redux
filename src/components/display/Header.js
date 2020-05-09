@@ -8,12 +8,12 @@ const Header = () => {
 				<nav>
 					<div style={{ backgroundColor: 'teal' }} className="nav-wrapper">
 						<div style={{ marginLeft: '2px' }}>
-							<a href="/" className="brand-logo">
+							<div className="brand-logo">
 								My Craft Manager
-							</a>
+							</div>
 						</div>
 
-						<a href="#" data-target="mobile-nav" className="sidenav-trigger">
+						<a href="/" data-target="mobile-nav" className="sidenav-trigger">
 							<i className="material-icons">menu</i>
 						</a>
 						<ul className="right hide-on-med-and-down">
