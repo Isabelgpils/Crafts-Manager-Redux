@@ -19,15 +19,8 @@ const DmcList = ({ dmcs, selectDmc, state, renderList }) => {
 			</div>
 		);
 	});
-	return (
-		<div style={{ backgroundColor: 'lightGrey' }} className="ui divided list">
-			{renderList}
-		</div>
-	);
 
 }
-
-
 
 const mapStateToProps = (state) => {
 	console.log(state);
