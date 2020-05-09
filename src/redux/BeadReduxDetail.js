@@ -18,6 +18,7 @@ const BeadDetail = ({ beads }) => {
 					<h5>Delica {bead.number}</h5>
 					<h6>Pattern: {bead.patterns}</h6>
 					<img
+						// link to Fusionbeads for images
 						src={`https://www.fusionbeads.com/images/11DB${bead.number}.MAIN.0.jpg?resizeid=2&resizeh=10&resizew=10`}
 						alt="beads"
 						style={{ margin: 'auto' }}

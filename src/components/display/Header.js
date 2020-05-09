@@ -16,10 +16,8 @@ const Header = () => {
 						<a href="/" data-target="mobile-nav" className="sidenav-trigger">
 							<i className="material-icons">menu</i>
 						</a>
+						{/* hide on smaller screens */}
 						<ul className="right hide-on-med-and-down">
-							{/* <li>
-								<Link to="/SearchAll">SearchAll</Link>
-							</li> */}
 							<li>
 								<Link to="/Home">Home</Link>
 							</li>
@@ -50,7 +48,7 @@ const Header = () => {
 						</ul>
 					</div>
 				</nav>
-
+				{/* side nav on smaller screens */}
 				<ul className="sidenav" id="mobile-nav">
 					<li>
 						<Link to="/Home">Home</Link>
