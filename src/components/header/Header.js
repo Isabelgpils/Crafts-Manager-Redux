@@ -1,6 +1,15 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-
+import { Switch, Route } from 'react-router-dom';
+import DmcReduxList from '../redux/DmcReduxList';
+import DmcReduxDetail from '../redux/DmcReduxDetail';
+import BeadReduxList from '../redux/BeadReduxList';
+import BeadReduxDetail from '../redux/BeadReduxDetail';
+import DmcList from '../threads/DmcList';
+import BeadList from '../beads/BeadList';
+import SilkList from '../threads/SilkList';
+import PatternList from '../patterns/PatternList';
+import MetallicList from '../metallics/MetallicList';
 const Header = () => {
 	return (
 		<Fragment>
@@ -18,12 +27,7 @@ const Header = () => {
 						</a>
 						{/* hide on smaller screens */}
 						<ul className="right hide-on-med-and-down" style={{ margin: '5px' }} >
-							<li>
-								<Link to="/Home">Home</Link>
-							</li>
-							{/* <li>
-								<Link to="/SearchAll">Search All </Link>
-							</li> */}
+
 							<li>
 								<Link to="/DMC">DMC Thread</Link>
 							</li>
@@ -82,6 +86,48 @@ const Header = () => {
 					</li>
 				</ul>
 			</div>
+			<Switch>
+				<Route path="/DMC">
+					<DmcList />
+				</Route>
+				<Route path="/Patterns">
+					<PatternList />
+				</Route>
+				<Route path="/Silks">
+					<SilkList />
+				</Route>
+				<Route path="/Beads">
+					<BeadList />
+				</Route>
+				<Route path="/Metallics">
+					<MetallicList />
+				</Route>
+				<Route path="/DMCRedux">
+					<div style={{ marginLeft: '5rem', marginTop: '5rem' }} className="ui container grid">
+						<div className="ui row">
+							<div className="column three wide">
+								<DmcReduxList />
+							</div>
+							<div className="column five wide">
+								<DmcReduxDetail />
+							</div>
+						</div>
+					</div>
+				</Route>
+
+				<Route path="/BeadsRedux">
+					<div style={{ marginLeft: '5rem', marginTop: '5rem' }} className="ui container grid">
+						<div className="ui row">
+							<div className="column four wide" style={{ color: 'black', backgroundColor: 'whiteSmoke' }}>
+								<BeadReduxList />
+							</div>
+							<div className="column four wide">
+								<BeadReduxDetail />
+							</div>
+						</div>
+					</div>
+				</Route>
+			</Switch>
 		</Fragment>
 	);
 };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Link, Fragment } from 'react';
 import { Grid } from '@material-ui/core';
 import BeadItem from './BeadItem';
 
@@ -17,6 +17,7 @@ const BeadList = () => {
 	});
 
 	return (
+
 		<Grid container direction="column">
 			<Grid container direction="column">
 				<Grid item>
@@ -32,6 +33,7 @@ const BeadList = () => {
 				</Grid>
 			</Grid>
 		</Grid>
+
 	);
 };
 
