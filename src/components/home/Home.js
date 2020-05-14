@@ -16,22 +16,15 @@ const Home = () => {
 					{/* Photo by Mel Poole on Unsplash */}
 				</div>
 			</div>
-			<div style={{ color: 'teal', margin: 'center', height: '300px' }} className="white">
+			<div style={{ color: 'teal', margin: 'center', height: '100px' }} className="white">
 				<div className="row container azure" >
 
 					<h3 className="header" >Spend less time organizing and more time creating</h3>
 					<h5 className="header">Search threads, beads and patterns and organize projects</h5>
 
-					<img src={dmcPic} align="floatLeft" alt="dmc thread" height="15%" width="15%" style={{ margin: "15px", border: "solid 5px grey" }} />
-					<img src="https://www.fusionbeads.com/images/11DB0871.MAIN.0.jpg?resizeid=2&resizeh=10&resizew=10" alt="beads" height="15%" width="15%" style={{ margin: "15px", border: "solid 5px grey" }} />
-					{/* Photo by Karly Santiago on Unsplash */}
 				</div>
 			</div>
-			<div style={{ height: '500px' }} className="parallax-container">
-				<div className="parallax">
-					<img src={dmcPic} alt="dmc thread" />
-				</div>
-			</div>
+
 		</Fragment>
 	);
 };
