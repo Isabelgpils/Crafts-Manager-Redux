@@ -10,6 +10,8 @@ import BeadList from '../beads/BeadList';
 import SilkList from '../threads/SilkList';
 import PatternList from '../patterns/PatternList';
 import MetallicList from '../metallics/MetallicList';
+import Home from '../home/Home';
+
 const Header = () => {
 	return (
 		<Fragment>
@@ -27,7 +29,9 @@ const Header = () => {
 						</a>
 						{/* hide on smaller screens */}
 						<ul className="right hide-on-med-and-down" style={{ margin: '5px' }} >
-
+							<li>
+								<Link to="/HOME">Home</Link>
+							</li>
 							<li>
 								<Link to="/DMC">DMC Thread</Link>
 							</li>
@@ -76,10 +80,10 @@ const Header = () => {
 						<Link to="/Patterns">Patterns</Link>
 					</li>
 					<li>
-						<Link to="/DMCRedux">DMC Redux</Link>
+						<Link to="/MyDMC">DMC Redux</Link>
 					</li>
 					<li>
-						<Link to="/BeadsRedux">BeadsRedux</Link>
+						<Link to="/MyBeads">BeadsRedux</Link>
 					</li>
 					<li>
 						<Link to="/Material">Material</Link>
@@ -87,22 +91,19 @@ const Header = () => {
 				</ul>
 			</div>
 			<Switch>
-				<Route path="/DMC">
-					<DmcList />
+				<Route exact path="/" component={Home}>
 				</Route>
-				<Route path="/Patterns">
-					<PatternList />
+				<Route exact path="/DMC" component={DmcList}>
 				</Route>
-				<Route path="/Silks">
-					<SilkList />
+				<Route exact path="/Patterns" component={PatternList}>
 				</Route>
-				<Route path="/Beads">
-					<BeadList />
+				<Route exact path="/Silks" component={SilkList} >
 				</Route>
-				<Route path="/Metallics">
-					<MetallicList />
+				<Route path="/Beads" component={BeadList}>
 				</Route>
-				<Route path="/DMCRedux">
+				<Route exact path="/Metallics" component={MetallicList} >
+				</Route>
+				<Route exact path="/MyDMC">
 					<div style={{ marginLeft: '5rem', marginTop: '5rem' }} className="ui container grid">
 						<div className="ui row">
 							<div className="column three wide">
@@ -115,7 +116,7 @@ const Header = () => {
 					</div>
 				</Route>
 
-				<Route path="/BeadsRedux">
+				<Route exact path="/beads/:MyBeads">
 					<div style={{ marginLeft: '5rem', marginTop: '5rem' }} className="ui container grid">
 						<div className="ui row">
 							<div className="column four wide" style={{ color: 'black', backgroundColor: 'whiteSmoke' }}>
