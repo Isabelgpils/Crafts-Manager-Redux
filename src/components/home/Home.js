@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import { Switch, Route } from 'react-router-dom';
 import dragonfly from '../patterns/images/dragonfly2.jpg';
 import dmcPic from './karly-santiago-E7zsz8JA8FM-unsplash.jpg'
 import dmcPic2 from './mel-poole-4J1sjmMr0Ro-unsplash.jpg'
