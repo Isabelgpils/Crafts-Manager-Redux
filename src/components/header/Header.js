@@ -48,10 +48,10 @@ const Header = () => {
 								<Link to="/Patterns">Patterns</Link>
 							</li>
 							<li>
-								<Link to="/DMCRedux">My DMC</Link>
+								<Link to="/MyDMC">My DMC</Link>
 							</li>
 							<li>
-								<Link to="/BeadsRedux">My Beads</Link>
+								<Link to="/MyBeads">My Beads</Link>
 							</li>
 						</ul>
 					</div>
@@ -83,10 +83,7 @@ const Header = () => {
 						<Link to="/MyDMC">DMC Redux</Link>
 					</li>
 					<li>
-						<Link to="/MyBeads">BeadsRedux</Link>
-					</li>
-					<li>
-						<Link to="/Material">Material</Link>
+						<Link to="/MyBeads">Beads Redux</Link>
 					</li>
 				</ul>
 			</div>
@@ -95,13 +92,13 @@ const Header = () => {
 				</Route>
 				<Route exact path="/DMC" component={DmcList}>
 				</Route>
-				<Route exact path="/Patterns" component={PatternList}>
+				<Route path="/Patterns" component={PatternList}>
 				</Route>
-				<Route exact path="/Silks" component={SilkList} >
+				<Route path="/Silks" component={SilkList} >
 				</Route>
 				<Route path="/Beads" component={BeadList}>
 				</Route>
-				<Route exact path="/Metallics" component={MetallicList} >
+				<Route path="/Metallics" component={MetallicList} >
 				</Route>
 				<Route exact path="/MyDMC">
 					<div style={{ marginLeft: '5rem', marginTop: '5rem' }} className="ui container grid">
@@ -116,7 +113,7 @@ const Header = () => {
 					</div>
 				</Route>
 
-				<Route exact path="/beads/:MyBeads">
+				<Route exact path="/MyBeads">
 					<div style={{ marginLeft: '5rem', marginTop: '5rem' }} className="ui container grid">
 						<div className="ui row">
 							<div className="column four wide" style={{ color: 'black', backgroundColor: 'whiteSmoke' }}>

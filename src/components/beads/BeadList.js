@@ -1,4 +1,4 @@
-import React, { Link, Fragment } from 'react';
+import React from 'react';
 import { Grid } from '@material-ui/core';
 import BeadItem from './BeadItem';
 

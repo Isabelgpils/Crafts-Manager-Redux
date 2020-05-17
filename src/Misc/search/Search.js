@@ -21,11 +21,12 @@ import { Link, Switch, Route } from 'react-router-dom';
 // 		};
 // 	}
 const Search = ({ searchfield }) => {
-	const [ crafts, setCraft ] = useState('');
+	const [beads, setBeads] = useState('');
 
 	// const onSearchChange = (event) => this.setState({ searchfield: event.target.value });
-	const onSearchChange = (event) => crafts(event.target.value);
-
+	const onSearchChange = (event) => {
+		setBeads(event.target.value);
+	}
 	const filteredThreads = dmcThreads.filter((thread) => {
 		const lowerCaseSearch = (this.state.searchfield || '').toLowerCase();
 		const hasColorName = (thread.color || '').toLowerCase().includes(lowerCaseSearch);
