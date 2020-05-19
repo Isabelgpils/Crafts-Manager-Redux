@@ -36,6 +36,7 @@ const PatternItem = (props) => {
 					<Typography variant="body2" color="textSecondary" component="p">
 						{props.brand} Cross Stitch Pattern
 					</Typography>
+
 				</CardContent>
 			</CardActionArea>
 			<CardActions>

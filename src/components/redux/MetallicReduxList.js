@@ -1,14 +1,11 @@
-import React, { Fragment } from 'react';
-import { Grid } from '@material-ui/core';
-import MetallicItem from './MetallicItem';
-import { metallics } from './metallics';
-//new code starts
+import React from 'react';
 import { connect } from 'react-redux';
-import { selectMetallic } from '../redux/actions';
+import { selectMetallic } from './actions';
 
-const MetallicList = ({ metallics, selectMetallic, state, renderList }) => {
+const MetallicReduxList = ({ metallics, selectMetallic, state, renderList }) => {
     return metallics.map((metallic) => {
         return (
+
             <div className="item" key={`${metallic.type}${metallic.number}`}>
                 <div className="right floated content">
                     <button
@@ -35,11 +32,9 @@ const MetallicList = ({ metallics, selectMetallic, state, renderList }) => {
 
     });
 }
+
 const mapStateToProps = (state) => {
-	console.log(state);
-	return { metallics: state.metallics };
+    console.log(state);
+    return { metallics: state.metallics };
 };
-export default connect(mapStateToProps, { selectMetallic: selectMetallic })(MetallicList);
-
-
-
+export default connect(mapStateToProps, { selectMetallic: selectMetallic })(MetallicReduxList);

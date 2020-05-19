@@ -20,13 +20,6 @@ export const selectSilk = (silk) => {
 	};
 };
 
-// action creator for selecting patterns
-export const selectPattern = (pattern) => {
-	return {
-		type: 'PATTERN_SELECTED',
-		payload: pattern
-	};
-};
 // action creator for selecting metallics
 export const selectMetallic = (metallic) => {
 	return {
