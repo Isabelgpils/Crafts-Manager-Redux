@@ -36,17 +36,13 @@ const MetallicItem = (props) => {
 	return (
 		<Card className={classes.root}>
 			<CardActionArea>
-				<	Typography style={{ textAlign: "center", padding: "10px", color: "rgb(56,64,88)" }} variant="h4" component="h4">
+				<Typography style={{ textAlign: "center", padding: "10px", color: "rgb(56,64,88)" }} variant="h4" component="h4">
 					{props.type}{props.number}
 				</Typography>
 				<CardMedia className={classes.media} image={`https://www.123stitch.com/pictures/${props.type}${props.number}.jpg`}
 				/>
 				{/* images from 123Stitch.com website */}
 				<CardContent style={{ textAlign: "center", height: '150px', width: '300px', backgroundColor: "lightGrey" }} >
-					{/* 
-					<Typography style={{ color: "rgb(56,64,88)" }} variant="h5" component="h5">
-						{props.type}{props.number}
-					</Typography> */}
 					<Typography style={{ margin: "15px 0", color: "rgb(56,64,88)" }} variant="subtitle1" component="h5">
 						Rainbow Gallery
 					</Typography>
