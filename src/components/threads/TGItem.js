@@ -23,10 +23,8 @@ const SilkItem2 = (props) => {
 		}
 	});
 
-	// export default function patternMedia() {
 	const classes = useStyles();
-	const fontColor = props.dark ? 'white' : 'lightBlack';
-	const cardColor = props.dmc === 'none' ? 'lightGrey' : `rgb(${props.rgb})`;
+
 	return (
 		<Card className={classes.root}>
 			<CardActionArea>
