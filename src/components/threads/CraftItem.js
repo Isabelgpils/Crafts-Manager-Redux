@@ -25,11 +25,7 @@ const CraftItem = (props) => {
 
 		}
 	});
-
-	// export default function patternMedia() {
 	const classes = useStyles();
-	// const fontColor = props.dark ? 'white' : 'lightBlack';
-	// const cardColor = props.dmc === 'none' ? 'darkgrey' : `rgb(${props.rgb})`;
 	return (
 		<Card className={classes.root}>
 			<CardActionArea>
