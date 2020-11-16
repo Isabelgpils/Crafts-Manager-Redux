@@ -38,9 +38,6 @@ const DmcItem = (props) => {
 				</Typography>
 				<CardMedia className={classes.media} image={`https://static1.dmc.com/cache/1/1/117mc_e_${props.dmc}_swatch_150x150.jpg`} title="dmc threads" />
 				<CardContent style={{ textAlign: "center", height: '150px', width: '250px', backgroundColor: "rgb(56,64,88, .2)" }} >
-					{/* <Typography style={{ color: "rgb(56,64,88)" }} gutterBottom variant="h4" component="h4">
-						{props.dmc}
-					</Typography> */}
 					<Typography style={{ padding: "20px", color: "rgb(56,64,88)" }} variant="h5" component="h5">
 						{props.color}
 					</Typography>

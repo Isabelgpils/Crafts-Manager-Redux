@@ -40,14 +40,10 @@ const GlorianaItem = (props) => {
 					<Typography style={{ color: "rgb(56,64,88)" }} gutterBottom variant="h5" component="h3">
 						{props.color}
 					</Typography>
-					{/* ["h1","h2","h3","h4","h5","h6","subtitle1","subtitle2","body1","body2","caption","button","overline","srOnly","inherit"]. */}
-					{/* <Typography style={{ color: "rgb(56,64,88)" }} variant="h6" component="h6">
-						{props.number}
-					</Typography > */}
 					<Typography style={{ marginTop: "10px", color: "rgb(56,64,88)" }} variant="h6" component="h6">
 						{props.brand}
 					</Typography >
-					<Typography style={{ color: "rgb(56,64,88)", marginTop: "15px" }} variant="subheading1" component="h6">
+					<Typography style={{ color: "rgb(56,64,88)", marginTop: "15px" }} variant="h6" component="h6">
 						DMC Substitute: {props.dmc}
 					</Typography>
 				</CardContent>
