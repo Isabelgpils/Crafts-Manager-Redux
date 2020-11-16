@@ -22,11 +22,10 @@ const CaronItem = (props) => {
 			height: 400,
 			width: 400,
 			alignItems: "center"
-			// border: 'solid grey 3px'
+
 		}
 	});
 
-	// export default function patternMedia() {
 	const classes = useStyles();
 	// const fontColor = props.dark ? 'white' : 'lightBlack';
 	// const cardColor = props.dmc === 'none' ? 'darkgrey' : `rgb(${props.rgb})`;
@@ -42,9 +41,7 @@ const CaronItem = (props) => {
 						{props.color}
 					</Typography>
 					{/* ["h1","h2","h3","h4","h5","h6","subtitle1","subtitle2","body1","body2","caption","button","overline","srOnly","inherit"]. */}
-					{/* <Typography style={{ color: "rgb(56,64,88)" }} variant="h6" component="h6">
-						{props.number}
-					</Typography > */}
+
 					<Typography style={{ marginTop: "10px", color: "rgb(56,64,88)" }} variant="h6" component="h6">
 						{props.brand}
 					</Typography >
