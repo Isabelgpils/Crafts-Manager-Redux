@@ -4,7 +4,7 @@ import { Grid } from '@material-ui/core';
 import DmcItem from '../threads/DmcItem.js';
 
 
-const SearchCrafts = (props) => {
+const SearchCrafts = () => {
 
 
     const [search, setSearch] = useState("");
@@ -26,7 +26,7 @@ const SearchCrafts = (props) => {
             key={thread.dmc}
             dmc={thread.dmc}
             color={thread.color}
-            image={`https://static1.dmc.com/cache/1/1/117mc_e_${props.dmc}_swatch_150x150.jpg`} />;
+            image={`https://static1.dmc.com/cache/1/1/117mc_e_${thread.dmc}_swatch_150x150.jpg`} />;
     });
 
     return (
