@@ -6,9 +6,9 @@ import DmcItem from '../threads/DmcItem.js';
 
 const SearchCrafts = (props) => {
 
-    //states- input query, movies
+
     const [search, setSearch] = useState("");
-    //create the state for movies, and update that state appropriate
+
     const [dmc, setDmc] = useState([]);
 
     const onSearchChange = (event) => setSearch(event.target.value);
