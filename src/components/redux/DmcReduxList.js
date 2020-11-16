@@ -12,8 +12,8 @@ const DmcList = ({ dmcs, selectDmc, state, renderList }) => {
 						</button>
 				</div>
 				<div className="content" style={{ padding: '1rem', backgroundColor: `rgb(${dmc.rgb})` }}>
-					<div>{dmc.number}</div>
-					<div>{dmc.color}</div>
+					<h6>{dmc.dmc}</h6>
+					<h6>{dmc.color}</h6>
 				</div>
 				<div>{state}</div>
 			</div>

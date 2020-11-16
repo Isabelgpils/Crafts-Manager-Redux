@@ -12,10 +12,11 @@ const DmcDetail = ({ dmcs }) => {
 	return (
 		<Fragment>
 			{dmcs.map((dmc) => (
-				<div key={dmc.number}>
-					<h6>DMC {dmc.number}</h6>
-
-					<div style={{ padding: '1rem', backgroundColor: `rgb(${dmc.rgb})` }} />
+				<div key={dmc.dmc}>
+					<h6>DMC {dmc.dmc}</h6>
+					<div style={{ padding: '2rem', backgroundColor: `rgb(${dmc.rgb})` }} >
+						<h5>{dmc.color}</h5>
+					</div>
 				</div>
 			))}
 		</Fragment>

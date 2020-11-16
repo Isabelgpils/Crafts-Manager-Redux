@@ -14,10 +14,18 @@ const SilkReduxDetail = ({ silks }) => {
         <Fragment>
             {silks.map((silk) => (
 
-                <div key={`${silk.brand}-${silk.number}`} style={{ padding: "10px", textAlign: "center", height: "100px", width: "200px", color: silk.dark ? 'white' : 'lightBlack', backgroundColor: silk.dmc === 'none' ? 'lightGrey' : `rgb(${silk.rgb})` }}>
+                <div key={`${silk.brand}-${silk.number}`} style={{ padding: "10px", textAlign: "center", height: "300px", width: "400px", color: silk.dark ? 'white' : 'lightBlack', backgroundColor: silk.dmc === 'none' ? 'lightGrey' : `rgb(${silk.rgb})` }}>
 
                     <h5>{silk.brand}{silk.number}</h5>
                     <h6>DMC: {silk.dmc}</h6>
+                    <img
+
+                        src={silk.image}
+                        alt="silk threads"
+                        style={{ margin: 'auto' }}
+                        height="200px"
+                        width="300px"
+                    />
                 </div>
             ))}
         </Fragment>

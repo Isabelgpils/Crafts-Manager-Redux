@@ -11,14 +11,16 @@ import { makeStyles } from '@material-ui/core/styles';
 const PatternItem = (props) => {
 	const useStyles = makeStyles({
 		root: {
-			maxWidth: 300,
+			maxWidth: 750,
 			marginLeft: '30px',
-			marginTop: '25px'
+			marginTop: '25px',
+			border: 'solid grey 1px'
 		},
 		media: {
-			height: 350,
+			height: 300,
 			width: 300,
-			border: 'solid white 3px'
+			padding: "0px",
+
 		}
 	});
 
@@ -28,22 +30,26 @@ const PatternItem = (props) => {
 	return (
 		<Card className={classes.root}>
 			<CardActionArea>
-				<CardMedia className={classes.media} image={props.image} title="Hortager Viradirium" />
-				<CardContent>
-					<Typography gutterBottom variant="h5" component="h2">
-						{props.name}
+				<Typography style={{ textAlign: "center", margin: "15px 5px" }} gutterBottom variant="h5" component="h5">
+					{props.name}
+				</Typography>
+				<CardMedia style={{ display: "inline-block" }} className={classes.media} image={props.image} title={props.name} />
+				<CardMedia style={{ display: "inline-block" }} className={classes.media} image={props.thumbnail} title={props.name} />
+				<CardContent style={{ backgroundColor: "lightGrey" }}>
+					<Typography gutterBottom variant="h5" component="h5">
+						{props.brand} {props.number}
 					</Typography>
-					<Typography variant="body2" color="textSecondary" component="p">
-						{props.brand} Cross Stitch Pattern
+					<Typography variant="h6" color="textSecondary" component="h6">
+						Size: {props.size} stitches
 					</Typography>
 
 				</CardContent>
 			</CardActionArea>
 			<CardActions>
-				<Button size="small" color="primary">
+				<Button size="large" color="primary">
 					in progress
 				</Button>
-				<Button size="small" color="primary">
+				<Button size="large" color="primary">
 					Finished
 				</Button>
 			</CardActions>

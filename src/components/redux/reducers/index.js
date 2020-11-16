@@ -7,12 +7,14 @@ import selectedReducer from './selectedReducer';
 
 
 
+
 export default combineReducers({
 	dmcs: allDMCReducer,
 	beads: allBeadsReducer,
 	silks: allSilksReducer,
 	metallics: allMetallicsReducer,
-	selectedReducer: selectedReducer
+	selectedReducer: selectedReducer,
+
 
 
 });

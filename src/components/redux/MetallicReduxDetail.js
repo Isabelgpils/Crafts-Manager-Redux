@@ -2,18 +2,18 @@ import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 
 
-const MetallicDetail = ({ metallics }) => {
+const MetallicReduxDetail = ({ metallics }) => {
     if (!metallics) {
         return (
             <div>
-                <h5>View Detail</h5>
+                <h5>Metallics</h5>
             </div>
         );
     }
     return (
         <Fragment>
             {metallics.map((metallic) => (
-                <div key={`${metallic.type}-${metallic.number}`}>
+                <div key={`${metallic.type}-${metallic.number}${metallic.patterns}`}>
 
                     <h5>{metallic.type}{metallic.number}</h5>
                     <h6>Pattern: {metallic.patterns}</h6>
@@ -36,4 +36,4 @@ const mapStateToProps = (state) => {
         //if state is all of these things
     };
 };
-export default connect(mapStateToProps)(MetallicDetail);
+export default connect(mapStateToProps)(MetallicReduxDetail);

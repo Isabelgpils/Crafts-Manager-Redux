@@ -5,14 +5,13 @@ import { selectBead } from './actions';
 const BeadList = ({ beads, selectBead, state, renderList }) => {
 	return beads.map((bead) => {
 		return (
-			<div className="item" key={bead.number}>
+			<div className="item" key={`${bead.patterns}${bead.number}`} >
 				<div className="right floated content">
 					<button
-						// style={{ color: 'navy' }}
 						className="ui button white"
 						onClick={() => selectBead(bead)}
 					>
-						View Detail
+						Select
 						</button>
 				</div>
 				<div className="content" style={{ padding: '1rem' }}>
@@ -21,15 +20,17 @@ const BeadList = ({ beads, selectBead, state, renderList }) => {
 					</div>
 					<img
 						//link to FusionBeads for images 
-						src={`https://www.fusionbeads.com/images/11DB${bead.number}.MAIN.0.jpg?resizeid=2&resizeh=10&resizew=10`}
+						// src={`https://www.fusionbeads.com/images/11DB${bead.number}.MAIN.0.jpg?resizeid=2&resizeh=10&resizew=10`}
+						src={`https://image1.fmgstatic.com/images/seed-bead-delica-glass-opaque-black-db${bead.number}-11-round-sold-per-75-gram-p---pdb${bead.number}vb(5).jpg`}
+
 						alt="beads"
-						height="30%"
-						width="30%"
+						height="25%"
+						width="25%"
 						style={{ margin: 'auto' }}
 					/>
 				</div>
 				<div>{state}</div>
-			</div>
+			</div >
 		);
 
 	});

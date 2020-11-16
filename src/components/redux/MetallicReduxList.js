@@ -6,14 +6,14 @@ const MetallicReduxList = ({ metallics, selectMetallic, state, renderList }) => 
     return metallics.map((metallic) => {
         return (
 
-            <div className="item" key={`${metallic.type}${metallic.number}`}>
+            <div className="item" key={`${metallic.type}${metallic.number}${metallic.patterns}`}>
                 <div className="right floated content">
                     <button
                         // style={{ color: 'navy' }}
                         className="ui button white"
                         onClick={() => selectMetallic(metallic)}
                     >
-                        View Detail
+                        Select
 						</button>
                 </div>
                 <div className="content" style={{ padding: '1rem' }}>
@@ -23,7 +23,7 @@ const MetallicReduxList = ({ metallics, selectMetallic, state, renderList }) => 
                     <img
                         src={`https://www.123stitch.com/pictures/${metallic.type}${metallic.number}.jpg`}
                         alt="metallics"
-                        style={{ height: '30%', width: '30%', margin: 'auto' }}
+                        style={{ height: '50%', width: '50%', margin: 'auto' }}
                     />
                 </div>
                 <div>{state}</div>
