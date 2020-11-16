@@ -42,10 +42,6 @@ const DinkyItem = (props) => {
 					<Typography style={{ color: "rgb(56,64,88)" }} gutterBottom variant="h5" component="h5">
 						{props.color}
 					</Typography>
-					{/* ["h1","h2","h3","h4","h5","h6","subtitle1","subtitle2","body1","body2","caption","button","overline","srOnly","inherit"]. */}
-					{/* <Typography style={{ color: "rgb(56,64,88)" }} variant="h6" component="h6">
-						{props.number}
-					</Typography > */}
 					<Typography style={{ marginTop: "10px", color: "rgb(56,64,88)" }} variant="h6" component="h6">
 						{props.brand}
 					</Typography >
