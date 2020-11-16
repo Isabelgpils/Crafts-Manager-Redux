@@ -23,9 +23,6 @@ const SilkList = () => {
 
 	return (
 		<Grid container direction="column">
-			{/* <div className="row">
-				<div className="col s12"><h3 style={{ marginTop: "55px" }} className="center-align">Caron Waterlilies Silk Thread</h3></div>
-			</div> */}
 			<Grid item>
 				<Grid style={{ margin: '10px' }} item container />
 				<Grid item xs={false} sm={2} />
