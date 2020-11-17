@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Grid } from '@material-ui/core';
 import DmcItem from './DmcItem';
 import { dmcThreads } from './dmc';
-import SearchCrafts from '../header/SearchCrafts';
+
 
 
 const DmcList = (props) => {
@@ -12,8 +12,6 @@ const DmcList = (props) => {
 			key={thread.dmc}
 			dmc={thread.dmc}
 			color={thread.color}
-			rgb={thread.rgb}
-			dark={thread.dark}
 			image={`https://static1.dmc.com/cache/1/1/117mc_e_${props.dmc}_swatch_150x150.jpg`} />;
 	});
 

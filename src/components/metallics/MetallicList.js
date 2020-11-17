@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { Grid } from '@material-ui/core';
 import MetallicItem from './MetallicItem';
 import { metallics } from './metallics';
+import SearchCrafts from '../header/SearchCrafts'
 
 
 const MetallicList = (props) => {
@@ -24,22 +25,14 @@ const MetallicList = (props) => {
     return (
         <Fragment>
 
+
+
             <div className="row">
-                <div className="col s12"><h3 style={{ marginTop: "55px" }} className="center-align">Rainbow Gallery Thread</h3></div>
+                <div className="col s12"><h3 style={{ marginTop: "55px" }} className="center-align">Rainbow Gallery Metallic Thread</h3></div>
+                <button>
+                    search
+            </button>
             </div>
-
-            <div style={{ margin: "100px" }}>
-                <form className="form" onSubmit={setMetallics}>
-                    <label className="label" htmlFor="query">Craft item</label>
-                    <input className="input" type="text" name="query"
-                        placeholder="search by type, number, pattern"
-                        value={search} onChange={onSearchChange}
-                    // value={search} onChange={(e) => setSearch(e.target.value)}
-                    />
-                    {/* <button className="button" type="submit">Search</button> */}
-                </form>
-            </div>
-
             <Grid container direction="column">
                 <Grid container direction="column">
                     <Grid item>

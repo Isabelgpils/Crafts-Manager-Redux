@@ -17,6 +17,7 @@ const SearchCrafts = () => {
         const lowerCaseSearch = search.toLowerCase();
         const hasThreadNumber = thread.dmc.toString().toLowerCase().includes(lowerCaseSearch);
         const hasThreadColor = (thread.color || "").toLowerCase().includes(lowerCaseSearch);
+        const hasThreadFamily = (thread.family || "").toLowerCase().includes(lowerCaseSearch);
         console.log("value of thread.dmc: ", thread.dmc)
         return hasThreadNumber || hasThreadColor;
 
@@ -27,6 +28,7 @@ const SearchCrafts = () => {
             key={thread.dmc}
             dmc={thread.dmc}
             color={thread.color}
+            family={thread.family}
             image={`https://static1.dmc.com/cache/1/1/117mc_e_${thread.dmc}_swatch_150x150.jpg`} />;
     });
 
