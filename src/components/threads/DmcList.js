@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Grid } from '@material-ui/core';
 import DmcItem from './DmcItem';
 import { dmcThreads } from './dmc';
+import SearchCrafts from '../header/SearchCrafts';
 
 
 const DmcList = (props) => {
@@ -17,23 +18,25 @@ const DmcList = (props) => {
 	});
 
 	return (
-		<Grid container direction="column" >
-			<div className="row">
-				<div className="col s12"><h3 style={{ marginTop: "55px" }} className="center-align">DMC Cotton Thread</h3></div>
-			</div>
-			<Grid item>
-				<Grid item container style={{ marginLeft: '25, 50px' }} />
-				<Grid item xs={false} sm={2} />
-				{/* on xsmall screens=no gutter  */}
-				<Grid item xs={12}>
-					<Grid item container>
-						{allThreads}
+		<Fragment>
+			<Grid container direction="column" >
+				<div className="row">
+					<div className="col s12"><h3 style={{ marginTop: "55px" }} className="center-align">DMC Cotton Thread</h3></div>
+				</div>
+				<Grid item>
+					<Grid item container style={{ marginLeft: '25, 50px' }} />
+					<Grid item xs={false} sm={2} />
+					{/* on xsmall screens=no gutter  */}
+					<Grid item xs={12}>
+						<Grid item container>
+							{allThreads}
+						</Grid>
 					</Grid>
+					<Grid item xs={false} sm={2} />
 				</Grid>
-				<Grid item xs={false} sm={2} />
-			</Grid>
 
-		</Grid>
+			</Grid>
+		</Fragment>
 	);
 };
 

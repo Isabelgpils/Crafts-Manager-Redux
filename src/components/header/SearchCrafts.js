@@ -6,7 +6,6 @@ import DmcItem from '../threads/DmcItem.js';
 
 const SearchCrafts = () => {
 
-
     const [search, setSearch] = useState("");
 
     const [dmc, setDmc] = useState([]);
