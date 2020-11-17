@@ -2,27 +2,27 @@ export const dmcThreads = [
 	//SALMON
 	{
 		dmc: 3713, color: 'Salmon Very Light', rgb: [255, 226, 226], dark: false,
-		image: "https://static1.dmc.com/cache/1/1/117mc_e_3713_swatch_150x150.jpg"
-	},
+		image: "https://static1.dmc.com/cache/1/1/117mc_e_3713_swatch_150x150.jpg",
+		},
 	{
 		dmc: 761, color: 'Salmon Light', rgb: [248, 180, 173], dark: false,
-		image: "https://static1.dmc.com/cache/1/1/117mc_e_761_swatch_150x150.jpg"
+		image: "https://static1.dmc.com/cache/1/1/117mc_e_761_swatch_150x150.jpg",
 	},
 	{
 		dmc: 760, color: 'Salmon', rgb: [236, 136, 128], dark: false,
-		image: "https://static1.dmc.com/cache/1/1/117mc_e_760_swatch_150x150.jpg"
+		image: "https://static1.dmc.com/cache/1/1/117mc_e_760_swatch_150x150.jpg",
 	},
 	{
 		dmc: 3712, color: 'Salmon Medium', rgb: [217, 93, 93], dark: false,
-		image: "https://static1.dmc.com/cache/1/1/117mc_e_3712_swatch_150x150.jpg"
+		image: "https://static1.dmc.com/cache/1/1/117mc_e_3712_swatch_150x150.jpg",
 	},
 	{
 		dmc: 3328, color: 'Salmon Dark', rgb: [227, 109, 109], dark: false,
-		image: "https://static1.dmc.com/cache/1/1/117mc_e_3328_swatch_150x150.jpg"
+		image: "https://static1.dmc.com/cache/1/1/117mc_e_3328_swatch_150x150.jpg",
 	},
 	{
 		dmc: 347, color: 'Salmon Very Dark', rgb: [191, 45, 45], dark: false,
-		image: "https://static1.dmc.com/cache/1/1/117mc_e_347_swatch_150x150.jpg"
+		image: "https://static1.dmc.com/cache/1/1/117mc_e_347_swatch_150x150.jpg",
 	},
 	//PEACH
 	{
@@ -180,11 +180,11 @@ export const dmcThreads = [
 	},
 	//DUSTY ROSE
 	{
-		dmc: 150, color: 'Dusty Rose Ult Vy Dk', rgb: [171, 2, 73], dark: false,
+		dmc: 150, color: 'Dusty Rose Ult Very Dark', rgb: [171, 2, 73], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_150_swatch_150x150.jpg"
 	},
 	{
-		dmc: 151, color: 'Dusty Rose Vry Lt', rgb: [240, 206, 212], dark: false,
+		dmc: 151, color: 'Dusty Rose Very Light', rgb: [240, 206, 212], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_151_swatch_150x150.jpg"
 	},
 	{
@@ -216,7 +216,7 @@ export const dmcThreads = [
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_962_swatch_150x150.jpg"
 	},
 	{
-		dmc: 963, color: 'Dusty Rose Ult Vy Lt', rgb: [255, 215, 215], dark: false,
+		dmc: 963, color: 'Dusty Rose Ult Very Light', rgb: [255, 215, 215], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_963_swatch_150x150.jpg"
 	},
 	//MAUVE
@@ -305,7 +305,7 @@ export const dmcThreads = [
 	},
 	//SHELL PINK
 	{
-		dmc: 225, color: 'Shell Pink Ult Vy Lt', rgb: [255, 223, 213], dark: false,
+		dmc: 225, color: 'Shell Pink Ultr Very Light', rgb: [255, 223, 213], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_225_swatch_150x150.jpg"
 	},
 	{
@@ -313,7 +313,7 @@ export const dmcThreads = [
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_224_swatch_150x150.jpg"
 	},
 	{
-		dmc: 152, color: 'Shell Pink Med Light', rgb: [226, 160, 153], dark: false,
+		dmc: 152, color: 'Shell Pink Medium Light', rgb: [226, 160, 153], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_152_swatch_150x150.jpg"
 	},
 	{
@@ -329,17 +329,17 @@ export const dmcThreads = [
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_3721_swatch_150x150.jpg"
 	},
 	{
-		dmc: 221, color: 'Shell Pink Vy Dk', rgb: [136, 62, 67], dark: false,
+		dmc: 221, color: 'Shell Pink Very Dark', rgb: [136, 62, 67], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_221_swatch_150x150.jpg"
 	},
 	//ANTIQUE MAUVE
-	{ dmc: 778, color: 'Antique Mauve Vy Lt', rgb: [223, 179, 187], dark: false },
+	{ dmc: 778, color: 'Antique Mauve Very Light', rgb: [223, 179, 187], dark: false },
 	{ dmc: 3727, color: 'Antique Mauve Light', rgb: [219, 169, 178], dark: false },
-	{ dmc: 316, color: 'Antique Mauve Med', rgb: [183, 115, 127], dark: false },
+	{ dmc: 316, color: 'Antique Mauve Medium', rgb: [183, 115, 127], dark: false },
 	{ dmc: 3726, color: 'Antique Mauve Dark', rgb: [155, 91, 102], dark: false },
-	{ dmc: 315, color: 'Antique Mauve Md Dk', rgb: [129, 73, 82], dark: false },
-	{ dmc: 3802, color: 'Antique Mauve Vy Dk', rgb: [113, 65, 73], dark: false },
-	{ dmc: 3743, color: 'Antique Violet Vy Lt', rgb: [215, 203, 211], dark: false },
+	{ dmc: 315, color: 'Antique Mauve Medium Dark', rgb: [129, 73, 82], dark: false },
+	{ dmc: 3802, color: 'Antique Mauve Very Dark', rgb: [113, 65, 73], dark: false },
+	{ dmc: 3743, color: 'Antique Violet Very Light', rgb: [215, 203, 211], dark: false },
 	{ dmc: 3042, color: 'Antique Violet Light', rgb: [183, 157, 167], dark: false },
 	{ dmc: 3041, color: 'Antique Violet Medium', rgb: [149, 111, 124], dark: false },
 	{ dmc: 3740, color: 'Antique Violet Dark', rgb: [120, 87, 98], dark: true },
@@ -365,16 +365,16 @@ export const dmcThreads = [
 	{ dmc: 552, color: 'Violet Medium', rgb: [128, 58, 107], dark: false },
 	{ dmc: 550, color: 'Violet Very Dark', rgb: [92, 24, 78], dark: true },
 	//BLUE VIOLET
-	{ dmc: 3747, color: 'Blue Violet Vy Lt', rgb: [211, 215, 237], dark: false },
+	{ dmc: 3747, color: 'Blue Violet Very Light', rgb: [211, 215, 237], dark: false },
 	{ dmc: 341, color: 'Blue Violet Light', rgb: [183, 191, 221], dark: false },
-	{ dmc: 156, color: 'Blue Violet Med Lt', rgb: [163, 174, 209], dark: false },
+	{ dmc: 156, color: 'Blue Violet Med Lightt', rgb: [163, 174, 209], dark: false },
 	{ dmc: 340, color: 'Blue Violet Medium', rgb: [173, 167, 199], dark: false },
 	{ dmc: 155, color: 'Blue Violet Med Dark', rgb: [152, 145, 182], dark: false },
 	{ dmc: 3746, color: 'Blue Violet Dark', rgb: [119, 107, 152], dark: false },
 	{ dmc: 333, color: 'Blue Violet Very Dark', rgb: [92, 84, 120], dark: false },
 	//CORNFLOWER
 	{
-		dmc: 157, color: 'Cornflower Blue Vy Lt', rgb: [157, 175, 213, 0.7], dark: false,
+		dmc: 157, color: 'Cornflower Blue Very Ligh', rgb: [157, 175, 213, 0.7], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_157_swatch_150x150.jpg"
 	},
 	{
@@ -382,7 +382,7 @@ export const dmcThreads = [
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_794_swatch_150x150.jpg"
 	},
 	{
-		dmc: 793, color: 'Cornflower Blue Med', rgb: [104, 117, 170], dark: false,
+		dmc: 793, color: 'Cornflower Blue Medium', rgb: [104, 117, 170], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_793_swatch_150x150.jpg"
 	},
 	{
@@ -394,12 +394,12 @@ export const dmcThreads = [
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_792_swatch_150x150.jpg"
 	},
 	{
-		dmc: 158, color: 'Cornflower Blu M V D', rgb: [35, 43, 99], dark: true,
+		dmc: 158, color: 'Cornflower Blu Medium Very Dark', rgb: [35, 43, 99], dark: true,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_158_swatch_150x150.jpg"
 
 	},
 	{
-		dmc: 791, color: 'Cornflower Blue V D', rgb: [25, 13, 83], dark: true,
+		dmc: 791, color: 'Cornflower Blue Very Dark', rgb: [25, 13, 83], dark: true,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_791_swatch_150x150.jpg"
 	},
 	{
@@ -483,7 +483,7 @@ export const dmcThreads = [
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_3846_swatch_150x150.jpg"
 	},
 	{
-		dmc: 3845, color: 'Turquoise Bright Med', rgb: [4, 196, 202], dark: false,
+		dmc: 3845, color: 'Turquoise Bright Medium', rgb: [4, 196, 202], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_3845_swatch_150x150.jpg"
 	},
 	{
@@ -492,7 +492,7 @@ export const dmcThreads = [
 	},
 	//GRAY GREEN
 	{
-		dmc: 928, color: 'Gray Green Vy Lt', rgb: [221, 227, 227], dark: false,
+		dmc: 928, color: 'Gray Green Very Light', rgb: [221, 227, 227], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_928_swatch_150x150.jpg"
 	},
 	{
@@ -500,7 +500,7 @@ export const dmcThreads = [
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_927_swatch_150x150.jpg"
 	},
 	{
-		dmc: 926, color: 'Gray Green Med', rgb: [152, 174, 174], dark: false,
+		dmc: 926, color: 'Gray Green Medium', rgb: [152, 174, 174], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_926_swatch_150x150.jpg"
 	},
 	{
@@ -508,7 +508,7 @@ export const dmcThreads = [
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_3768_swatch_150x150.jpg"
 	},
 	{
-		dmc: 924, color: 'Gray Green Vy Dark', rgb: [86, 106, 106], dark: true,
+		dmc: 924, color: 'Gray Green Very Dark', rgb: [86, 106, 106], dark: true,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_924_swatch_150x150.jpg"
 	},
 	//TEAL GREEN
@@ -518,7 +518,7 @@ export const dmcThreads = [
 	},
 
 	{
-		dmc: 3848, color: 'Teal Green Med', rgb: [85, 147, 146], dark: false,
+		dmc: 3848, color: 'Teal Green Medium', rgb: [85, 147, 146], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_3848_swatch_150x150.jpg"
 	},
 	{
@@ -531,7 +531,7 @@ export const dmcThreads = [
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_964_swatch_150x150.jpg"
 	},
 	{
-		dmc: 959, color: 'Sea Green Med', rgb: [89, 199, 180], dark: false,
+		dmc: 959, color: 'Sea Green Medium', rgb: [89, 199, 180], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_959_swatch_150x150.jpg"
 	},
 	{
@@ -539,29 +539,29 @@ export const dmcThreads = [
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_958_swatch_150x150.jpg"
 	},
 	{
-		dmc: 3812, color: 'Sea Green Vy Dk', rgb: [47, 140, 132], dark: false,
+		dmc: 3812, color: 'Sea Green Very Dark', rgb: [47, 140, 132], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_3812_swatch_150x150.jpg"
 	},
 	//GREEN
 	{
-		dmc: 3851, color: 'Green Bright Lt', rgb: [73, 179, 161], dark: false,
+		dmc: 3851, color: 'Green Bright Light', rgb: [73, 179, 161], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_3851_swatch_150x150.jpg"
 	},
 	{
-		dmc: 943, color: 'Green Bright Md', rgb: [61, 147, 132], dark: false,
+		dmc: 943, color: 'Green Bright Medium', rgb: [61, 147, 132], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_943_swatch_150x150.jpg"
 	},
 	{
-		dmc: 3850, color: 'Green Bright Dk', rgb: [55, 132, 119], dark: false,
+		dmc: 3850, color: 'Green Bright Dark', rgb: [55, 132, 119], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_3850_swatch_150x150.jpg"
 	},
 	//AQUAMARINE
 	{
-		dmc: 993, color: 'Aquamarine Vy Lt', rgb: [144, 192, 180], dark: false,
+		dmc: 993, color: 'Aquamarine Very Light', rgb: [144, 192, 180], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_993_swatch_150x150.jpg"
 	},
 	{
-		dmc: 992, color: 'Aquamarine Lt', rgb: [111, 174, 159], dark: false,
+		dmc: 992, color: 'Aquamarine Ligh', rgb: [111, 174, 159], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_992_swatch_150x150.jpg"
 	},
 	{
@@ -569,12 +569,12 @@ export const dmcThreads = [
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_3814_swatch_150x150.jpg"
 	},
 	{
-		dmc: 991, color: 'Aquamarine Dk', rgb: [71, 123, 110], dark: false,
+		dmc: 991, color: 'Aquamarine Dark', rgb: [71, 123, 110], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_991_swatch_150x150.jpg"
 	},
 	//JADE
 	{
-		dmc: 966, color: 'Jade Ultra Vy Lt', rgb: [185, 215, 192], dark: false,
+		dmc: 966, color: 'Jade Ultra Very Light', rgb: [185, 215, 192], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_966_swatch_150x150.jpg"
 	},
 	{
@@ -595,7 +595,7 @@ export const dmcThreads = [
 	},
 	//CELADON
 	{
-		dmc: 3817, color: 'Celadon Green Lt', rgb: [153, 195, 170], dark: false,
+		dmc: 3817, color: 'Celadon Green Light', rgb: [153, 195, 170], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_3817_swatch_150x150.jpg"
 	},
 	{
@@ -603,15 +603,15 @@ export const dmcThreads = [
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_3816_swatch_150x150.jpg"
 	},
 	{
-		dmc: 163, color: 'Celadon Green Md', rgb: [77, 131, 97], dark: false,
+		dmc: 163, color: 'Celadon Green Meium', rgb: [77, 131, 97], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_163_swatch_150x150.jpg"
 	},
 	{
-		dmc: 3815, color: 'Celadon Green Dk', rgb: [71, 119, 89], dark: false,
+		dmc: 3815, color: 'Celadon Green Dark', rgb: [71, 119, 89], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_3815_swatch_150x150.jpg"
 	},
 	{
-		dmc: 561, color: 'Celadon Green VD', rgb: [44, 106, 69], dark: false,
+		dmc: 561, color: 'Celadon Green Very Dark', rgb: [44, 106, 69], dark: false,
 		image: "https://static1.dmc.com/cache/1/1/117mc_e_561_swatch_150x150.jpg"
 	},
 	// 	776 is replaced by 3326.
