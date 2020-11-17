@@ -13,7 +13,7 @@ const DmcList = (props) => {
 			color={thread.color}
 			rgb={thread.rgb}
 			dark={thread.dark}
-			image={thread.image} />;
+			image={`https://static1.dmc.com/cache/1/1/117mc_e_${props.dmc}_swatch_150x150.jpg`} />;
 	});
 
 	return (
