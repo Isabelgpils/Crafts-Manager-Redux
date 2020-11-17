@@ -13,13 +13,15 @@ const SearchCrafts = () => {
 
     const onSearchChange = (event) => setSearch(event.target.value);
 
-    const filteredThreads = dmcThreads.filter((thread) => {
-        const lowerCaseSearch = search.toLowerCase();
-        const hasThreadNumber = (thread.dmc || "").toLowerCase().includes(lowerCaseSearch);
-        const hasThreadColor = (thread.color || "").toLowerCase().includes(lowerCaseSearch);
+    const filteredThreads = dmcThreads.filter(thread => {
 
+        const lowerCaseSearch = search.toLowerCase();
+        const hasThreadNumber = thread.dmc.toString().toLowerCase().includes(lowerCaseSearch);
+        const hasThreadColor = (thread.color || "").toLowerCase().includes(lowerCaseSearch);
+        console.log("value of thread.dmc: ", thread.dmc)
         return hasThreadNumber || hasThreadColor;
-    })
+
+    });
 
     const allThreads = filteredThreads.map((thread) => {
         return <DmcItem
@@ -30,8 +32,8 @@ const SearchCrafts = () => {
     });
 
     return (
-        <fragment>
-            <div>
+        <Fragment>
+            <div style={{ margin: "100px" }}>
                 <form className="form" onSubmit={setDmc}>
                     <label className="label" htmlFor="query">Craft item</label>
                     <input className="input" type="text" name="query"
@@ -39,7 +41,7 @@ const SearchCrafts = () => {
                         value={search} onChange={onSearchChange}
                     // value={search} onChange={(e) => setSearch(e.target.value)}
                     />
-                    <button className="button" type="submit">Search</button>
+                    {/* <button className="button" type="submit">Search</button> */}
                 </form>
             </div>
 
@@ -57,7 +59,7 @@ const SearchCrafts = () => {
                 </Grid>
             </Grid>
 
-        </fragment>
+        </Fragment>
     )
 }
 export default SearchCrafts;

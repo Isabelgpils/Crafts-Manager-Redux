@@ -5,7 +5,7 @@ import DmcList from '../threads/DmcList'
 import BeadList from '../beads/BeadList';
 import ChatelaineList from '../patterns/ChatelaineList';
 import MetallicList from '../metallics/MetallicList';
-// import SearchCrafts from './SearchCrafts.js'
+import SearchCrafts from './SearchCrafts.js'
 import GlorianaList from '../threads/GlorianaList';
 import DinkyList from '../threads/DinkyList';
 import CaronList from '../threads/CaronList';
@@ -100,8 +100,8 @@ const Header = () => {
 				</ul>
 			</div >
 			<Switch>
-				{/* <Route path="/Search" component={SearchCrafts}>
-				</Route> */}
+				<Route path="/Search" component={SearchCrafts}>
+				</Route>
 				<Route path="/DMC" component={DmcList}></Route>
 				<Route path="/Chatelaine" component={ChatelaineList}></Route>
 				<Route path="/Gloriana" component={GlorianaList}></Route>
