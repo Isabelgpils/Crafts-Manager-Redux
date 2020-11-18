@@ -18,7 +18,6 @@ const SearchCrafts = () => {
         const hasThreadNumber = thread.dmc.toString().toLowerCase().includes(lowerCaseSearch);
         const hasThreadColor = (thread.color || "").toLowerCase().includes(lowerCaseSearch);
         const hasThreadFamily = (thread.family || "").toLowerCase().includes(lowerCaseSearch);
-        console.log("value of thread.dmc: ", thread.dmc)
         return hasThreadNumber || hasThreadColor;
 
     });

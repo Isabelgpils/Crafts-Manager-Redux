@@ -7,6 +7,7 @@ import ChatelaineList from '../patterns/ChatelaineList';
 import MetallicList from '../metallics/MetallicList';
 import SearchCrafts from './SearchCrafts.js'
 import SearchBeads from './SearchBeads.js'
+import SearchDMC from './SearchDMC.js'
 import GlorianaList from '../threads/GlorianaList';
 import DinkyList from '../threads/DinkyList';
 import CaronList from '../threads/CaronList';
@@ -45,6 +46,9 @@ const Header = () => {
 								<Link to="/All Search">All Search</Link>
 							</li>
 							<li>
+								<Link to="/Search DMC">Search DMC</Link>
+							</li>
+							<li>
 								<Link to="/DMC">DMC Thread</Link>
 							</li>
 							<li>
@@ -80,6 +84,9 @@ const Header = () => {
 						<Link to="/All Search"> All Search</Link>
 					</li>
 					<li>
+						<Link to="/Search DMC">Search DMC</Link>
+					</li>
+					<li>
 						<Link to="/DMC">DMC Thread</Link>
 					</li>
 					{/* <li>
@@ -112,6 +119,8 @@ const Header = () => {
 				<Route path="/Bead Search" component={SearchBeads}>
 				</Route>
 				<Route path="/All Search" component={SearchCrafts}>
+				</Route>
+				<Route path="/Search DMC" component={SearchDMC}>
 				</Route>
 				<Route path="/DMC" component={DmcList}></Route>
 				<Route path="/Chatelaine" component={ChatelaineList}></Route>
