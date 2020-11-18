@@ -122,10 +122,14 @@ const Header = () => {
 				</Route>
 				<Route path="/Search DMC" component={SearchDMC}>
 				</Route>
-				<Route path="/DMC" component={DmcList}></Route>
-				<Route path="/Chatelaine" component={ChatelaineList}></Route>
-				<Route path="/Gloriana" component={GlorianaList}></Route>
-				<Route path="/Dinky Dyes" component={DinkyList}></Route>
+				<Route path="/DMC" component={DmcList}>
+				</Route>
+				<Route path="/Chatelaine" component={ChatelaineList}>
+				</Route>
+				<Route path="/Gloriana" component={GlorianaList}>
+				</Route>
+				<Route path="/Dinky Dyes" component={DinkyList}>
+				</Route>
 				<Route path="/Caron Waterlilies" component={CaronList}></Route>
 				<Route path="/Thread Gatherer" component={TGList}></Route>
 				<Route path="/Beads" component={BeadList}></Route>

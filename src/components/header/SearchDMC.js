@@ -33,17 +33,18 @@ const SearchCrafts = () => {
 
     return (
         <Fragment>
-            <div style={{ margin: "100px" }}>
+            <div style={{ margin: "75px 500px" }}>
                 <form className="form" onSubmit={setDmc}>
-                    <label className="label" htmlFor="query">Craft item</label>
+                    <label style={{ fontSize: "24px" }} className="label" htmlFor="query">Search</label>
                     <input className="input" type="text" name="query"
-                        placeholder="dmc thread color or number"
+                        placeholder="number, color, pattern"
                         value={search} onChange={onSearchChange}
                     // value={search} onChange={(e) => setSearch(e.target.value)}
                     />
                     {/* <button className="button" type="submit">Search</button> */}
                 </form>
             </div>
+
 
             <Grid container direction="column">
                 <Grid item>
