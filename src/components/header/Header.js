@@ -6,11 +6,13 @@ import BeadList from '../beads/BeadList';
 import ChatelaineList from '../patterns/ChatelaineList';
 import MetallicList from '../metallics/MetallicList';
 import SearchCrafts from './SearchCrafts.js'
+import SearchBeads from './SearchBeads.js'
 import GlorianaList from '../threads/GlorianaList';
 import DinkyList from '../threads/DinkyList';
 import CaronList from '../threads/CaronList';
 import TGList from '../threads/TGList';
 import Logo from './Logo2.png';
+
 
 
 
@@ -25,6 +27,7 @@ const Header = () => {
 								<img src={Logo} alt="logo" width="50%"></img>
 
 							</div>
+
 						</div>
 
 						<a href="/" data-target="mobile-nav" className="sidenav-trigger">
@@ -36,7 +39,10 @@ const Header = () => {
 								<Link to="/HOME">Home</Link>
 							</li> */}
 							<li>
-								<Link to="/Search">Search</Link>
+								<Link to="/Bead Search">Beads Search</Link>
+							</li>
+							<li>
+								<Link to="/All Search">All Search</Link>
 							</li>
 							<li>
 								<Link to="/DMC">DMC Thread</Link>
@@ -68,7 +74,10 @@ const Header = () => {
 				{/* side nav on smaller screens */}
 				<ul className="sidenav" id="mobile-nav">
 					<li>
-						<Link to="/Search">Search</Link>
+						<Link to="/Bead Search">Bead Search</Link>
+					</li>
+					<li>
+						<Link to="/All Search"> All Search</Link>
 					</li>
 					<li>
 						<Link to="/DMC">DMC Thread</Link>
@@ -100,7 +109,9 @@ const Header = () => {
 				</ul>
 			</div >
 			<Switch>
-				<Route path="/Search" component={SearchCrafts}>
+				<Route path="/Bead Search" component={SearchBeads}>
+				</Route>
+				<Route path="/All Search" component={SearchCrafts}>
 				</Route>
 				<Route path="/DMC" component={DmcList}></Route>
 				<Route path="/Chatelaine" component={ChatelaineList}></Route>

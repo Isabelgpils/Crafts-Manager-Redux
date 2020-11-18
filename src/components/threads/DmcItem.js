@@ -41,9 +41,6 @@ const DmcItem = (props) => {
 					<Typography style={{ padding: "20px", color: "rgb(56,64,88)" }} variant="h5" component="h5">
 						{props.color}
 					</Typography>
-					<Typography style={{ padding: "20px", color: "rgb(56,64,88)" }} variant="h6" component="h6">
-						Color Family: {props.family}
-					</Typography>
 				</CardContent>
 			</CardActionArea>
 			<CardActions >
