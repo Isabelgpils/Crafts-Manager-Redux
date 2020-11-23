@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Grid } from '@material-ui/core';
 import MetallicItem from './MetallicItem';
 import { metallics } from './metallics';
-import SearchCrafts from '../header/SearchCrafts'
+
 
 
 const MetallicList = (props) => {

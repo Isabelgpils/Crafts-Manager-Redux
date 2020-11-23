@@ -8,7 +8,7 @@ const SearchBeads = () => {
 
     const [search, setSearch] = useState("");
 
-    const [bead, setbead] = useState([]);
+    const [items, setItems] = useState([]);
 
     const onSearchChange = (event) => setSearch(event.target.value);
 
@@ -32,15 +32,14 @@ const SearchBeads = () => {
 
     return (
         <Fragment>
-            <div style={{ margin: "100px" }}>
-                <form className="form" onSubmit={search}>
-                    <label className="label" htmlFor="query">Craft item</label>
+           <div style={{ margin: "75px 500px" }}>
+                <form className="form" onSubmit={setItems}>
+
+                    <label style={{ fontSize: "24px" }} className="label" htmlFor="query">Search</label>
                     <input className="input" type="text" name="query"
-                        placeholder="dmc thread color or number"
+                        placeholder="number, color, pattern"
                         value={search} onChange={onSearchChange}
-                    // value={search} onChange={(e) => setSearch(e.target.value)}
                     />
-                    {/* <button className="button" type="submit">Search</button> */}
                 </form>
             </div>
 
@@ -57,7 +56,6 @@ const SearchBeads = () => {
                     <Grid item xs={false} sm={2} />
                 </Grid>
             </Grid>
-
         </Fragment>
     )
 }
