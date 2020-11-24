@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
-import ChatelaineItem from './ChatelaineItem';
-import { chatelaine } from './chatelaine';
+import MiraItem from './MiraItem';
+import { mirabilia } from './mirabilia.js';
 
 const MiraList = (props) => {
 	const allPatterns = mirabilia.map((pattern) => {

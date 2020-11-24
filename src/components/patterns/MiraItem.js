@@ -18,7 +18,7 @@ const MiraItem = (props) => {
 			marginTop: "25px"
 		},
 		media: {
-			height: 500,
+			height: 650,
 			width: 500,
 			padding: "0px"
 		}
@@ -33,8 +33,9 @@ const MiraItem = (props) => {
 				<Typography style={{ textAlign: "center", margin: "15px 5px" }} gutterBottom variant="h5" component="h5">
 					{props.name}
 				</Typography>
-				<CardMedia style={{ display: "inline-block" }} className={classes.media} image={props.image} title={props.name} />
 				<CardMedia style={{ display: "inline-block" }} className={classes.media} image={props.thumbnail} title={props.name} />
+				<CardMedia style={{ display: "inline-block" }} className={classes.media} image={props.image} title={props.name} />
+
 				<CardContent style={{ backgroundColor: "lightGrey" }}>
 					<Typography gutterBottom variant="h5" component="h5">
 						{props.brand} {props.number}
