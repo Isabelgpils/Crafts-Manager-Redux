@@ -18,10 +18,12 @@ Gloriana thread images - labroderiemapassion.com
 Dinky Dyes images -123Stitch.com
 Caron thread images - londonthreadcompany.com
 Thread Gatherer images - londonthreadcompany.com
-Chatelaine pattern 
+Chatelaine pattern images 
     thumbnails: chatelaine.de
     progress: personal photographs
 Mirabilia/Nora Corbett pattern images 
     thumbnails: 123Stitch.com
-    progress images: personal photograph
-
+    progress images: personal photographs
+Ink Circles pattern images 
+    thumbnails: inkcircles.com
+    progress images: personal photographs

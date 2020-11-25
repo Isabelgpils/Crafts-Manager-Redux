@@ -9,6 +9,7 @@ import CaronList from '../threads/CaronList'
 import TGList from '../threads/TGList';
 import ChatelaineList from '../patterns/ChatelaineList';
 import MiraList from '../patterns/MiraList';
+import InkCirclesList from '../patterns/InkCirclesList';
 import MetallicList from '../metallics/MetallicList';
 import SearchMetallics from './SearchMetallics.js';
 import SearchBeads from './SearchBeads.js';
@@ -37,8 +38,8 @@ const Header = () => {
 			{/* -- Dropdown Structure PATTERNS -- */}
 			<ul id="dropdown3" className="dropdown-content">
 				<li><Link to="/Chatelaine">Chatelaine</Link></li>
-				<li><Link to="/Mirabilia">"Mirabilia"</Link></li>
-				<li><Link to="/">"Ink Circles"</Link></li>
+				<li><Link to="/Mirabilia">Mirabilia</Link></li>
+				<li><Link to="/Ink Circles">Ink Circles</Link></li>
 			</ul>
 			{/* ---Navbar---- */}
 			<div className="navbar-fixed">
@@ -61,7 +62,13 @@ const Header = () => {
 						</ul>
 					</div>
 				</nav>
+
 			</div>
+
+
+
+
+
 			<Switch>
 				<Route path="/Search Beads" component={SearchBeads}>
 				</Route>
@@ -74,6 +81,8 @@ const Header = () => {
 				<Route path="/Chatelaine" component={ChatelaineList}>
 				</Route>
 				<Route path="/Mirabilia" component={MiraList}>
+				</Route>
+				<Route path="/Ink Circles" component={InkCirclesList}>
 				</Route>
 				<Route path="/Gloriana" component={GlorianaList}>
 				</Route>
