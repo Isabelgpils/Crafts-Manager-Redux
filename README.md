@@ -29,10 +29,11 @@ IMAGES
  - thumbnails: chatelaine.de
  progress: personal photographs
 
--Mirabilia/Nora Corbett pattern images 
+-Mirabilia/Nora Corbett pattern images
 -thumbnails: 123Stitch.com
 -progress images: personal photographs
 
 -Ink Circles pattern images
 -thumbnails: inkcircles.com
 -progress images: personal photographs
+
