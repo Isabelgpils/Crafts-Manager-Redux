@@ -22,13 +22,11 @@ The UI was built using Material UI and Materialize CSS.
 
 - DMC thread images from <https://www.dmc.com/>
 
-- Gloriana thread images - <https://www.labroderiemapassion.com/>
-
 - inky Dyes thread images <https://www.123stitch.com/>
 
-- Caron thread images from <https://www.londonthreadcompany.com/>
+- Caron thread images from <https://www.londonbeadcompany.com/> | <http://labroderiemapassion.com/boutique/fils/caron-waterlilies/>
 
-- Thread Gatherer images from <https://www.londonthreadcompany.com/>
+- Thread Gatherer images from <https://www.londonbeadcompany.com/>
 
 - Chatelaine pattern images
 
