@@ -1,40 +1,42 @@
 # README
 
-CONTENTS OF THIS FILE
+## Introduction
 
-##Introduction
 React project that displays materials used for cross stitchingprojects (beads, threads and patterns).
 The purpose of the app is to allow a stitcher to search, update and view different craft materials.
 
-##SEARCHING
+## SEARCHING
+
 The search functions were built using React hooks.
 
-##DISPLAY
+## DISPLAY
+
 The UI was built using Material UI and Materialize CSS.
 
-##IMAGES
-\*Bead images from [BarrelofBeads.com]
+## IMAGES
 
-\*Metallic thread images from [123Stitch.com]
+- Bead images from [BarrelofBeads.com]
 
-\*DMC thread images from [dmc.com]
+- Metallic thread images from [123Stitch.com]
 
-\*Gloriana thread images - [labroderiemapassion.com]
+- DMC thread images from [dmc.com]
 
-\*Dinky Dyes thread images [123Stitch.com]
+- Gloriana thread images - [labroderiemapassion.com]
 
-\*Caron thread images from [londonthreadcompany.com]
+- inky Dyes thread images [123Stitch.com]
 
-\*Thread Gatherer images from [londonthreadcompany.com]
+- Caron thread images from [londonthreadcompany.com]
 
-\*Chatelaine pattern images
-**thumbnails: [chatelaine.de]
-**progress: personal photographs
+- Thread Gatherer images from [londonthreadcompany.com]
+
+- Chatelaine pattern images
+- thumbnails: [chatelaine.de]
+- progress: personal photographs
 
 - Mirabilia/Nora Corbett pattern images
 - thumbnails: [123Stitch.com]
 - progress images: personal photographs
 
 - Ink Circles pattern images
--       thumbnails: [inkcircles.com]
--       progress images: personal photographs
+- thumbnails: [inkcircles.com]
+- progress images: personal photographs
