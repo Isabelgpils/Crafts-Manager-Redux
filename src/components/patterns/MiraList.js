@@ -1,10 +1,10 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 import MiraItem from './MiraItem';
-import { mirabilia } from './mirabilia.js';
+import { miras } from './miras.js';
 
 const MiraList = (props) => {
-	const allPatterns = mirabilia.map((pattern) => {
+	const allPatterns = miras.map((pattern) => {
 		return (
 			<MiraItem
 				key={pattern.name}

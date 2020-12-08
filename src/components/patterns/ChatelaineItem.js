@@ -12,14 +12,14 @@ const ChatelaineItem = (props) => {
 
 	const useStyles = makeStyles({
 		root: {
-			maxWidth: 1050,
+			maxWidth: 750,
 			margin: 'auto',
 			border: 'solid grey 1px',
 			marginTop: "25px"
 		},
 		media: {
-			height: 500,
-			width: 500,
+			height: 350,
+			width: 350,
 		}
 	});
 

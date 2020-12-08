@@ -14,7 +14,6 @@ const BeadItem = (props) => {
 	const useStyles = makeStyles({
 		root: {
 			maxWidth: 300,
-
 			margin: '25px',
 			border: 'solid darkGrey 2px',
 
@@ -45,7 +44,6 @@ const BeadItem = (props) => {
 				</Typography>
 				<CardMedia className={classes.media} image={`https://cdn.shopify.com/s/files/1/0805/4511/products/DB${props.number}_200x.jpeg?v=1568806569`}
 					// <CardMedia className={classes.media} image={`https://cdn.shopify.com/s/files/1/0805/4511/products/DB${props.number}_2048x.jpeg?v=1568806701`}
-
 					//BarrelofBeads.com  website
 					title="beads" />
 				<CardContent style={{ textAlign: "center", height: '130px', width: '300px', backgroundColor: "lightGrey" }} >

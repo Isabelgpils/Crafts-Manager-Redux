@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
-import { Switch, Route } from 'react-router-dom';
+import { Link, Switch, Route } from 'react-router-dom';
 import DmcList from '../threads/DmcList';
 import BeadList from '../beads/BeadList';
 import GlorianaList from '../threads/GlorianaList';
@@ -9,7 +8,7 @@ import CaronList from '../threads/CaronList'
 import TGList from '../threads/TGList';
 import ChatelaineList from '../patterns/ChatelaineList';
 import MiraList from '../patterns/MiraList';
-import InkCirclesList from '../patterns/InkCirclesList';
+import SamplersList from '../patterns/SamplersList';
 import MetallicList from '../metallics/MetallicList';
 import SearchMetallics from './SearchMetallics.js';
 import SearchBeads from './SearchBeads.js';
@@ -20,7 +19,6 @@ import Logo3 from './Logo3.jpg';
 const Header = () => {
 	return (
 		<Fragment>
-
 			{/* -- Dropdown Structure SEARCH -- */}
 			<ul id="dropdown1" className="dropdown-content">
 				<li><Link to="/Search Beads">Search Beads</Link></li>
@@ -33,19 +31,24 @@ const Header = () => {
 				<li><Link to="/Dinky Dyes">Dinky Dyes</Link></li>
 				<li><Link to="/Gloriana">Gloriana</Link></li>
 				<li><Link to="/Caron Waterlilies">Caron Waterlilies</Link></li>
-				<li><Link to="/Thread Gatherer">Thread Gatherer</Link>></li>
+				<li><Link to="/Thread Gatherer">Thread Gatherer</Link></li>
 			</ul>
 			{/* -- Dropdown Structure PATTERNS -- */}
 			<ul id="dropdown3" className="dropdown-content">
 				<li><Link to="/Chatelaine">Chatelaine</Link></li>
 				<li><Link to="/Mirabilia">Mirabilia</Link></li>
-				<li><Link to="/Ink Circles">Ink Circles</Link></li>
+				<li><Link to="/Samplers">Samplers</Link></li>
 			</ul>
 			{/* ---Navbar---- */}
 			<div className="navbar-fixed">
 				<nav>
-					<div className="nav-wrapper" style={{ height: "130%", backgroundColor: "rgb(56,64,88)" }}>
-						<div className="brand-logo right"><img src={Logo3} alt="logo" width="73%" /></div>
+					{/* --nav wrapper -- */}
+					<div className="nav-wrapper" style={{ backgroundColor: "rgb(56,64,88)" }}>
+						{/* --  LOGO -- */}
+						<div className="brand-logo right"><img src={Logo3} alt="logo" width="50%" /> </div>
+						{/* -- SIDE NAVIGATION -- */}
+						<a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+
 						<ul className="left hide-on-med-and-down" style={{ marginLeft: "30px" }}>
 							{/*---Dropdown Trigger SEARCH---*/}
 							<li><a className="dropdown-trigger" href="#!" data-target="dropdown1">Search
@@ -63,12 +66,21 @@ const Header = () => {
 					</div>
 				</nav>
 
+				<ul className="sidenav" id="mobile-demo">
+					<li><Link to="/Search Beads">Search Beads</Link></li>
+					<li><Link to="/Search Metallics">Search Metallics</Link></li>
+					<li><Link to="/Search DMC">Search DMC</Link></li>
+					<li><Link to="/DMC">DMC Thread</Link></li>
+					<li><Link to="/Dinky Dyes">Dinky Dyes</Link></li>
+					<li><Link to="/Gloriana">Gloriana</Link></li>
+					<li><Link to="/Caron Waterlilies">Caron Waterlilies</Link></li>
+					<li><Link to="/Thread Gatherer">Thread Gatherer</Link></li>
+					<li><Link to="/Chatelaine">Chatelaine</Link></li>
+					<li><Link to="/Mirabilia">Mirabilia</Link></li>
+					<li><Link to="/Samplers">Samplers</Link></li>
+				</ul>
+
 			</div>
-
-
-
-
-
 			<Switch>
 				<Route path="/Search Beads" component={SearchBeads}>
 				</Route>
@@ -82,7 +94,7 @@ const Header = () => {
 				</Route>
 				<Route path="/Mirabilia" component={MiraList}>
 				</Route>
-				<Route path="/Ink Circles" component={InkCirclesList}>
+				<Route path="/Samplers" component={SamplersList}>
 				</Route>
 				<Route path="/Gloriana" component={GlorianaList}>
 				</Route>

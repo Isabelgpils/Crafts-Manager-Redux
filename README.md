@@ -1,3 +1,4 @@
+# README
 React project that displays materials used for cross stitchingprojects(beads, threads and patterns). 
 The purpose of the app is to allow a stitcher to search, update and view different materials. 
 
@@ -26,14 +27,14 @@ IMAGES
 -Thread Gatherer images - londonthreadcompany.com
 
 -Chatelaine pattern images
- - thumbnails: chatelaine.de
- progress: personal photographs
+thumbnails: chatelaine.de, 
+progress: personal photographs
 
 -Mirabilia/Nora Corbett pattern images
--thumbnails: 123Stitch.com
--progress images: personal photographs
+thumbnails: 123Stitch.com,
+progress images: personal photographs
 
 -Ink Circles pattern images
--thumbnails: inkcircles.com
--progress images: personal photographs
+thumbnails: inkcircles.com,
+progress images: personal photographs
 

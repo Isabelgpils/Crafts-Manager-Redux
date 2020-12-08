@@ -24,14 +24,9 @@ const MetallicList = (props) => {
 
     return (
         <Fragment>
-
-
-
             <div className="row">
                 <div className="col s12"><h3 style={{ marginTop: "55px" }} className="center-align">Rainbow Gallery Metallic Thread</h3></div>
-                <button>
-                    search
-            </button>
+
             </div>
             <Grid container direction="column">
                 <Grid container direction="column">

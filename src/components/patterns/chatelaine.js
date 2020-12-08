@@ -1,18 +1,18 @@
 import dragonfly3 from './images/dragonfly3.jpg';
-import gothic from './images/gothic.jpg';
+import gothicArch from './images/gothicArch.jpg';
 import granada2 from './images/granada2.jpg';
 import herbularus from './images/herbularus.jpg';
 import hortager from './images/hortager.jpg';
 import hydrangea from './images/hydrangea.jpg';
-import miniTuscany from './images/miniTuscany.jpg';
+import miniTuscany2 from './images/miniTuscany2.jpg';
 import mossGarden2 from './images/mossGarden2.jpg';
 import portager2 from './images/portager2.jpg';
-import watergarden2 from './images/watergarden2.jpg';
+import waterGarden from './images/waterGarden.jpg';
 import vinery from './images/vinery.jpg';
 import hummingbird from './images/hummingbird.jpg';
-import persian2 from './images/persian2.jpg';
-import peacock from './images/peacock.jpg';
-import hanging3 from './images/hanging3.jpg';
+import persianIris from './images/persianIris.jpg';
+import PeacockTile from './images/PeacockTile.jpg';
+import hangingGardens from './images/hanging1.jpg';
 import empty from './images/empty.jpg';
 
 
@@ -35,7 +35,7 @@ export const chatelaine = [
 		thumbnail: "https://chatelaine.de/wp-content/uploads/edd/2015/03/Onl-137-white.jpg"
 	},
 	{
-		number: 212, size: "175 x 175", image: gothic, name: 'Gothic Arch Ornament', brand: 'Chatelaine',
+		number: 212, size: "175 x 175", image: gothicArch, name: 'Gothic Arch Ornament', brand: 'Chatelaine',
 		thumbnail: "https://chatelaine.de/wp-content/uploads/edd/2017/11/212-teal-whte.jpg"
 	},
 	{
@@ -51,19 +51,19 @@ export const chatelaine = [
 		thumbnail: "https://chatelaine.de/wp-content/uploads/edd/2015/08/Onl-117-white.jpg"
 	},
 	{
-		number: 52, size: "293 x 293", image: persian2, name: 'The Persian Iris Garden Mandala', brand: 'Chatelaine',
+		number: 52, size: "293 x 293", image: persianIris, name: 'The Persian Iris Garden Mandala', brand: 'Chatelaine',
 		thumbnail: "https://chatelaine.de/wp-content/uploads/edd/2017/07/apricot.jpg"
 	},
 	{
-		number: 203, size: "119 x 119", image: miniTuscany, name: 'Little Tuscany Mandala', brand: 'Chatelaine',
+		number: 203, size: "119 x 119", image: miniTuscany2, name: 'Little Tuscany Mandala', brand: 'Chatelaine',
 		thumbnail: "https://chatelaine.de/wp-content/uploads/edd/2017/11/202-Ital-Mini-.png"
 	},
 	{
-		number: 22, size: "237 x 237", image: watergarden2, name: 'Watergarden', brand: 'Chatelaine',
+		number: 22, size: "237 x 237", image: waterGarden, name: 'Watergarden', brand: 'Chatelaine',
 		thumbnail: "http://chatelaine.de/wp-content/uploads/edd/2016/01/Onl-022-Watergarden.jpg"
 	},
 	{
-		number: 69, size: "265 x 205 ", image: hanging3, name: 'The Hanging Gardens of Semiramis', brand: 'Chatelaine',
+		number: 69, size: "265 x 205 ", image: hangingGardens, name: 'The Hanging Gardens of Semiramis', brand: 'Chatelaine',
 		thumbnail: "https://chatelaine.de/wp-content/uploads/edd/2016/01/chat-069-hang-gard-white.jpg"
 	},
 
@@ -78,7 +78,7 @@ export const chatelaine = [
 
 
 	{
-		number: 128, size: "129 x 129", image: peacock, name: 'Beaded Peacock Tile', brand: 'Chatelaine',
+		number: 128, size: "129 x 129", image: PeacockTile, name: 'Beaded Peacock Tile', brand: 'Chatelaine',
 		thumbnail: "https://chatelaine.de/wp-content/uploads/edd/2015/07/ONL-128-Peacock-black.jpg"
 	},
 

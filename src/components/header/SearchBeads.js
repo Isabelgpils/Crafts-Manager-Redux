@@ -11,7 +11,11 @@ const SearchBeads = () => {
     const [items, setItems] = useState([]);
 
     const onSearchChange = (event) => setSearch(event.target.value);
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        setItems(search);
 
+    }
     const filteredBeads = beads.filter(bead => {
 
         const lowerCaseSearch = search.toLowerCase();
@@ -32,12 +36,12 @@ const SearchBeads = () => {
 
     return (
         <Fragment>
-           <div style={{ margin: "75px 500px" }}>
-                <form className="form" onSubmit={setItems}>
+            <div style={{ marginLeft: "15px" }}>
+                <form className="form" onSubmit={handleSubmit}>
 
                     <label style={{ fontSize: "24px" }} className="label" htmlFor="query">Search</label>
                     <input className="input" type="text" name="query"
-                        placeholder="number, color, pattern"
+                        placeholder="number, pattern"
                         value={search} onChange={onSearchChange}
                     />
                 </form>

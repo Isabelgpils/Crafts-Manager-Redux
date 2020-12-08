@@ -1,12 +1,12 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
-import InkCirclesItem from './InkCirclesItem';
-import { inkCircles } from './inkCircles';
+import SamplersItem from './SamplersItem';
+import { samplers } from './samplers';
 
-const InkCirclesList = (props) => {
-	const allPatterns = inkCircles.map((pattern) => {
+const SamplersList = (props) => {
+	const allPatterns = samplers.map((pattern) => {
 		return (
-			<InkCirclesItem
+			<SamplersItem
 				key={pattern.number}
 				name={pattern.name}
 				image={pattern.image}
@@ -39,4 +39,4 @@ const InkCirclesList = (props) => {
 };
 
 
-export default InkCirclesList;
+export default SamplersList;

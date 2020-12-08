@@ -21,7 +21,7 @@ const ChatelaineList = (props) => {
 	return (
 		<Grid container direction="column">
 			<Grid item>
-				<Grid style={{ margin: '10px' }} item container />
+				<Grid style={{ marginLeft: '50px' }} item container />
 				<Grid item xs={false} sm={2} />
 				{/* on xsmall screens=no gutter  */}
 				<Grid item xs={12}>

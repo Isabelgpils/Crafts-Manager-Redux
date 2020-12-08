@@ -11,6 +11,11 @@ const SearchMetallics = () => {
     const [item, setItem] = useState([]);
 
     const onSearchChange = (event) => setSearch(event.target.value);
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        setItem(search);
+
+    }
 
     const filteredItems = metallics.filter(item => {
 
@@ -37,7 +42,7 @@ const SearchMetallics = () => {
     return (
         <Fragment>
             <div style={{ margin: "75px 500px" }}>
-                <form className="form" onSubmit={setItem}>
+                <form className="form" onSubmit={handleSubmit}>
 
                     <label style={{ fontSize: "24px" }} className="label" htmlFor="query">Search</label>
                     <input className="input" type="text" name="query"

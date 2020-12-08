@@ -8,18 +8,18 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
-const InkCirclesItem = (props) => {
+const SamplersItem = (props) => {
 
 	const useStyles = makeStyles({
 		root: {
-			maxWidth: 1050,
+			maxWidth: 750,
 			margin: 'auto',
 			border: 'solid grey 1px',
-			marginTop: "25px"
+			marginTop: 50
 		},
 		media: {
-			height: 500,
-			width: 500,
+			height: 350,
+			width: 350
 		}
 	});
 
@@ -57,4 +57,4 @@ const InkCirclesItem = (props) => {
 	);
 };
 
-export default InkCirclesItem;
+export default SamplersItem;
