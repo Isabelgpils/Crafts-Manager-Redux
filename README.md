@@ -24,9 +24,9 @@ The UI was built using Material UI and Materialize CSS.
 
 - inky Dyes thread images <https://www.123stitch.com/>
 
-- Caron thread images from <https://www.londonbeadcompany.com/> | <http://labroderiemapassion.com/boutique/fils/caron-waterlilies/>
+- Caron thread images from <https://www.londonbeadco.com/> | <http://labroderiemapassion.com/boutique/fils/caron-waterlilies/>
 
-- Thread Gatherer images from <https://www.londonbeadcompany.com/>
+- Thread Gatherer images from <https://www.londonbeadco.com/>
 
 - Chatelaine pattern images
 
