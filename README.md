@@ -2,9 +2,9 @@
 
 ## Introduction
 
-React project that displays materials used for cross stitching projects (beads, threads and patterns).
+The purpose of this React project is to provide a way to manage craft materials used for cross stitching projects. At the moment it displays beads, threads and patterns. The next phase of this project will be to provide a way for a user tomanage inventory and create shopping lists.
 
-The purpose of the app is to allow a stitcher to search, update and view different craft materials.
+I am learning Redux and am will add additional functionality as I learn new skills.
 
 ## SEARCHING
 
