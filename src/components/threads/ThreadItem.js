@@ -7,23 +7,34 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
+import TGList from "./TGList";
 
-const DmcItem = props => {
+const ThreadItem = props => {
+  // const threadBrand =
+  //   props.brand == "Gloriana"
+  //     ? "Glo"
+  //     : props.brand == "Caron Waterlilies"
+  //     ? "WL"
+  //     : "TG";
+
   const useStyles = makeStyles({
     root: {
       maxWidth: 300,
-      marginLeft: "30px",
-      marginTop: "25px",
+      margin: "1rem",
+      marginTop: "1rem",
       border: "solid grey 1px"
     },
+    // maxWidth: 600,
+    // margin: '25px',
+    // marginTop: '25px',
+    // border: 'solid grey 1px'
     media: {
-      height: 250,
-      width: 250
-      // border: 'solid grey 3px'
+      height: 300,
+      width: 300,
+      alignItems: "center"
     }
   });
 
-  // export default function patternMedia() {
   const classes = useStyles();
   // const fontColor = props.dark ? 'white' : 'lightBlack';
   // const cardColor = props.dmc === 'none' ? 'darkgrey' : `rgb(${props.rgb})`;
@@ -33,41 +44,52 @@ const DmcItem = props => {
         <Typography
           style={{
             textAlign: "center",
-            padding: "15px",
+            padding: "1%",
             color: "rgb(56,64,88)"
           }}
-          variant="h4"
-          component="h4"
+          variant="h5"
+          component="h5"
         >
-          {props.dmc}
+          {/* {threadBrand} */}
+          {props.number}
         </Typography>
         <CardMedia
           className={classes.media}
-          image={`https://static1.dmc.com/cache/1/1/117mc_e_${props.dmc}_swatch_150x150.jpg`}
-          title="dmc threads"
+          image={props.image}
+          title="silk threads"
         />
         <CardContent
           style={{
             textAlign: "center",
-            height: "150px",
-            width: "250px",
-            backgroundColor: "rgb(56,64,88, .2)"
+            height: "100px",
+            width: "300px",
+            backgroundColor: "rgb(56,64,88, .3)"
           }}
         >
           <Typography
-            style={{ padding: "20px", color: "rgb(56,64,88)" }}
-            variant="h5"
-            component="h5"
+            style={{ color: "rgb(56,64,88)" }}
+            gutterBottom
+            variant="h6"
+            component="h6"
           >
             {props.color}
+          </Typography>
+          {/* ["h1","h2","h3","h4","h5","h6","subtitle1","subtitle2","body1","body2","caption","button","overline","srOnly","inherit"]. */}
+
+          <Typography
+            style={{ marginTop: "1%", color: "rgb(56,64,88)" }}
+            variant="subtitle1"
+            component="h5"
+          >
+            {props.brand}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="medium" style={{ marginLeft: "5px" }}>
+        <Button size="medium" style={{ marginLeft: "5%" }}>
           In Stash
         </Button>
-        <Button size="medium" style={{ marginLeft: "55px" }}>
+        <Button size="medium" style={{ marginLeft: "30%" }}>
           Need
         </Button>
       </CardActions>
@@ -75,4 +97,4 @@ const DmcItem = props => {
   );
 };
 
-export default DmcItem;
+export default ThreadItem;

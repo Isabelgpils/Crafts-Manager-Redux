@@ -1,73 +1,113 @@
 import React, { useState, Fragment } from "react";
-import { Grid } from '@material-ui/core';
-import { metallics } from '../metallics/metallics'
-import MetallicItem from '../metallics/MetallicItem.js';
-
+import { Grid } from "@material-ui/core";
+import { metallics } from "../metallics/metallics";
+import MetallicItem from "../metallics/MetallicItem.js";
 
 const SearchMetallics = () => {
+  const [search, setSearch] = useState("");
 
-    const [search, setSearch] = useState("");
+  const [item, setItem] = useState([]);
 
-    const [item, setItem] = useState([]);
+  const onSearchChange = event => setSearch(event.target.value);
+  const handleSubmit = event => {
+    event.preventDefault();
+    setItem(search);
+  };
+  const clearSearch = event => setSearch("");
 
-    const onSearchChange = (event) => setSearch(event.target.value);
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        setItem(search);
+  const filteredItems = metallics.filter(item => {
+    const lowerCaseSearch = search.toLowerCase();
+    // const hasItemDmc = item.dmc.toString().toLowerCase().includes(lowerCaseSearch);
+    const hasItemNumber = (item.number || "")
+      .toString()
+      .includes(lowerCaseSearch);
+    const hasItemColor = (item.color || "")
+      .toLowerCase()
+      .includes(lowerCaseSearch);
+    const hasItemPattern = (item.patterns || "")
+      .toLowerCase()
+      .includes(lowerCaseSearch);
+    const hasItemType = (item.type || "")
+      .toLowerCase()
+      .includes(lowerCaseSearch);
+    return hasItemNumber || hasItemColor || hasItemPattern || hasItemType;
+  });
 
-    }
-
-    const filteredItems = metallics.filter(item => {
-
-        const lowerCaseSearch = search.toLowerCase();
-        // const hasItemDmc = item.dmc.toString().toLowerCase().includes(lowerCaseSearch);
-        const hasItemNumber = (item.number || "").toString().includes(lowerCaseSearch);
-        const hasItemColor = (item.color || "").toLowerCase().includes(lowerCaseSearch);
-        const hasItemPattern = (item.patterns || "").toLowerCase().includes(lowerCaseSearch);
-        const hasItemType = (item.type || "").toLowerCase().includes(lowerCaseSearch);
-        return hasItemNumber || hasItemColor || hasItemPattern || hasItemType;
-
-    });
-
-    const allItems = filteredItems.map((item) => {
-        return <MetallicItem
-            key={`${item.type}${item.number}`}
-            number={item.number}
-            color={item.color}
-            type={item.type}
-            patterns={item.patterns}
-            image={`https://www.123stitch.com/pictures/${item.type}${item.number}.jpg`} />;
-    });
-
+  const allItems = filteredItems.map(item => {
     return (
-        <Fragment>
-            <div style={{ margin: "75px 500px" }}>
-                <form className="form" onSubmit={handleSubmit}>
+      <MetallicItem
+        key={`${item.type}${item.number}`}
+        number={item.number}
+        color={item.color}
+        type={item.type}
+        patterns={item.patterns}
+        image={`https://www.123stitch.com/pictures/${item.type}${item.number}.jpg`}
+      />
+    );
+  });
 
-                    <label style={{ fontSize: "24px" }} className="label" htmlFor="query">Search</label>
-                    <input className="input" type="text" name="query"
-                        placeholder="number, color, pattern"
-                        value={search} onChange={onSearchChange}
-                    />
-                </form>
-            </div>
+  return (
+    <Fragment>
+      <div className="navbar-fixed" style={{ zIndex: "-1" }}>
+        <nav>
+          <div
+            className="nav-wrapper"
+            style={{
+              backgroundColor: "whitesmoke"
+            }}
+          >
+            <form onSubmit={handleSubmit}>
+              <div className="input-field">
+                <input
+                  id="search"
+                  type="search"
+                  required
+                  placeholder="search by color or number"
+                  value={search}
+                  onChange={onSearchChange}
+                />
+                <label className="label-icon" htmlFor="search">
+                  <i className="material-icons">search</i>
+                </label>
+                <i className="material-icons" onClick={clearSearch}>
+                  close
+                </i>
+              </div>
+            </form>
+          </div>
+        </nav>
+      </div>
 
-            <Grid container direction="column">
-                <Grid item>
-                    <Grid style={{ margin: '10px' }} item container />
-                    <Grid item xs={false} sm={2} />
-                    {/* on xsmall screens=no gutter  */}
-                    <Grid item xs={12}>
-                        <Grid item container>
-                            {allItems}
-                        </Grid>
-                    </Grid>
-                    <Grid item xs={false} sm={2} />
-                </Grid>
+      {/* <div style={{ margin: "75px 500px" }}>
+        <form className="form" onSubmit={handleSubmit}>
+          <label style={{ fontSize: "24px" }} className="label" htmlFor="query">
+            Search
+          </label>
+          <input
+            className="input"
+            type="text"
+            name="query"
+            placeholder="number, color, pattern"
+            value={search}
+            onChange={onSearchChange}
+          />
+        </form>
+      </div> */}
+
+      <Grid container direction="column">
+        <Grid item>
+          <Grid style={{ margin: "10px" }} item container />
+          <Grid item xs={false} sm={2} />
+          {/* on xsmall screens=no gutter  */}
+          <Grid item xs={12}>
+            <Grid item container>
+              {allItems}
             </Grid>
-
-        </Fragment>
-    )
-}
+          </Grid>
+          <Grid item xs={false} sm={2} />
+        </Grid>
+      </Grid>
+    </Fragment>
+  );
+};
 export default SearchMetallics;
-

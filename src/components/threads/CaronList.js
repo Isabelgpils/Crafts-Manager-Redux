@@ -1,13 +1,13 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import CaronItem from "./CaronItem";
+import ThreadItem from "./ThreadItem";
 import { caron } from "./caron";
 
 const SilkList = () => {
   const sortedCaron = caron.sort((a, b) => a.number - b.number);
   const allSilks = sortedCaron.map(silk => {
     return (
-      <CaronItem
+      <ThreadItem
         key={`${silk.brand} ${silk.color}`}
         brand={silk.brand}
         number={silk.number}
