@@ -13,6 +13,8 @@ const SearchBeads = () => {
     event.preventDefault();
     setItems(search);
   };
+  const clearSearch = event => setSearch("");
+
   const filteredBeads = beads.filter(bead => {
     const lowerCaseSearch = search.toLowerCase();
     const hasBeadNumber = (bead.number || "")
@@ -40,72 +42,39 @@ const SearchBeads = () => {
 
   return (
     <Fragment>
-      {/* <div
-        style={{
-          textAlign: "left",
-          margin: "0% 0% 5% 5%"
-        }}
-      ></div> */}
-      {/* <div
-        className="navbar fixed"
-        style={{
-          textAlign: "left",
-          position: "sticky"
-        }}
-      ></div>
-      <nav className="white" role="navigation">
-        <div className="nav-wrapper container">
-          <form className="col s12">
-            <div className="row">
-              <div className="input-field col s6">
-                <input
-                  type="text"
-                  class="validate"
-                  placeholder="Search..."
-                  value={search}
-                  onChange={onSearchChange}
-                ></input>
-              </div>
-              <div className="input-field col s6">
-                <button
-                  className="waves-effect waves-light btn-small indigo"
-                  type="submit"
-                  name="action"
-                  onSubmit={handleSubmit}
-                >
-                  Clear Search
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </nav> */}
-
-      <form
-        className="form"
-        onSubmit={handleSubmit}
-        style={{
-          backgroundColor: "#1ABC9C",
-          color: "#2c3e50",
-          padding: "1%"
-        }}
-      >
-        <label
-          style={{ fontSize: "24px", color: "white", marginTop: "3%" }}
-          className="label"
-          htmlFor="query"
+      <div>
+        <form
+          className="form"
+          onSubmit={handleSubmit}
+          style={{
+            // backgroundColor: "#1ABC9C",
+            // color: "#2c3e50",
+            padding: "1%"
+          }}
         >
-          {/* Search Beads */}
-        </label>
-        <input
-          className="input"
-          type="text"
-          name="query"
-          placeholder="number, color, pattern"
-          value={search}
-          onChange={onSearchChange}
-        />
-      </form>
+          <label
+            style={{ fontSize: "24px", color: "white", marginTop: "3%" }}
+            className="label"
+            htmlFor="query"
+          >
+            {/* Search Beads */}
+          </label>
+          <input
+            className="input"
+            type="text"
+            name="query"
+            placeholder="Search by number or pattern"
+            value={search}
+            onChange={onSearchChange}
+          />
+          <button onClick={clearSearch}>
+            {/* <i className="material-icons" style={{ display: "inlineBlock" }}>
+            close
+          </i> */}
+            Clear Search
+          </button>
+        </form>
+      </div>
       <Grid container direction="column">
         <Grid container direction="column">
           <Grid item>

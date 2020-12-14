@@ -41,31 +41,38 @@ const SearchCrafts = () => {
 
   return (
     <Fragment>
-      <div
-        className="ui medium icon input focus"
-        style={{
-          margin: "3% 0% 0% 2%",
-          maxWidth: "100px"
-        }}
-      >
-        <input
-          type="text"
-          placeholder="search..."
-          value={search}
-          onChange={onSearchChange}
-        />
-        <div className="ui basic buttons">
-          {/* <div className="ui button" onSubmit={handleSubmit}>
-            <i className="search icon"></i>
-          </div> */}
-          <div className="ui button" onClick={clearSearch}>
-            <i className="close icon"></i>
-          </div>
-        </div>
+      <div>
+        <form
+          className="form"
+          onSubmit={handleSubmit}
+          style={{
+            // backgroundColor: "#1ABC9C",
+            // color: "#2c3e50",
+            padding: "1%"
+          }}
+        >
+          <label
+            style={{ fontSize: "24px", color: "white", marginTop: "3%" }}
+            className="label"
+            htmlFor="query"
+          ></label>
+          <input
+            className="input"
+            type="text"
+            name="query"
+            placeholder="Search by number or color"
+            value={search}
+            onChange={onSearchChange}
+          />
+          <button onClick={clearSearch}>
+            {/* <i className="material-icons" style={{ display: "inlineBlock" }}>
+            close
+          </i> */}
+            Clear Search
+          </button>
+        </form>
       </div>
-      <h6 style={{ color: "darkGrey", marginLeft: "2%" }}>
-        <i>Search by color or number</i>
-      </h6>
+
       <Grid container direction="column">
         <Grid item>
           <Grid item container />

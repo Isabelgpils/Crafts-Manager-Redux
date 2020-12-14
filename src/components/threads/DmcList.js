@@ -19,27 +19,46 @@ const DmcList = props => {
   return (
     <Fragment>
       <Grid container direction="column">
-        <div className="row">
-          <div className="col s12">
-            <h4 style={{ marginTop: "19%" }} className="center-align">
-              DMC Cotton Thread
-            </h4>
-          </div>
-        </div>
-        <Grid item>
-          <Grid item container style={{ marginLeft: "25, 50px" }} />
-          <Grid item xs={false} sm={2} />
-          {/* on xsmall screens=no gutter  */}
-          <Grid item xs={12}>
+        <Grid item style={{ marginLeft: "5%" }}>
+          <Grid item container>
+            <Grid item xs={false} sm={2} />
+            {/* on xsmall screens=no gutter  */}
+            <Grid item xs={12}>
+              <Grid item container style={{ margin: "auto" }}>
+                <h5 style={{ margin: "5%" }}>DMC Thread</h5>
+              </Grid>
+            </Grid>
             <Grid item container>
               {allThreads}
             </Grid>
           </Grid>
-          <Grid item xs={false} sm={2} />
         </Grid>
       </Grid>
     </Fragment>
   );
 };
+{
+  /* <Grid container direction="column">
+        <div className="row">
+          <div className="col s12">
+            <h5 style={{ marginTop: "5%" }}>DMC Cotton Thread</h5>
+          </div>
+        </div>
+        <Grid item>
+          <Grid item container style={{ marginLeft: "25, 50px" }} />
+          <Grid item xs={false} sm={2} />
+          {/* on xsmall screens=no gutter  */
+}
+//           <Grid item xs={12}>
+//             <Grid item container>
+//               {allThreads}
+//             </Grid>
+//           </Grid>
+//           <Grid item xs={false} sm={2} />
+//         </Grid>
+//       </Grid> */}
+//     </Fragment>
+//   );
+// };
 
 export default DmcList;

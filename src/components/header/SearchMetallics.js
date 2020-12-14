@@ -48,51 +48,39 @@ const SearchMetallics = () => {
 
   return (
     <Fragment>
-      <div className="navbar-fixed" style={{ zIndex: "-1" }}>
-        <nav>
-          <div
-            className="nav-wrapper"
-            style={{
-              backgroundColor: "whitesmoke"
-            }}
+      <div>
+        <form
+          className="form"
+          onSubmit={handleSubmit}
+          style={{
+            // backgroundColor: "#1ABC9C",
+            // color: "#2c3e50",
+            padding: "1%"
+          }}
+        >
+          <label
+            style={{ fontSize: "24px", color: "white", marginTop: "3%" }}
+            className="label"
+            htmlFor="query"
           >
-            <form onSubmit={handleSubmit}>
-              <div className="input-field">
-                <input
-                  id="search"
-                  type="search"
-                  required
-                  placeholder="search by color or number"
-                  value={search}
-                  onChange={onSearchChange}
-                />
-                <label className="label-icon" htmlFor="search">
-                  <i className="material-icons">search</i>
-                </label>
-                <i className="material-icons" onClick={clearSearch}>
-                  close
-                </i>
-              </div>
-            </form>
-          </div>
-        </nav>
-      </div>
-
-      {/* <div style={{ margin: "75px 500px" }}>
-        <form className="form" onSubmit={handleSubmit}>
-          <label style={{ fontSize: "24px" }} className="label" htmlFor="query">
-            Search
+            {/* Search Beads */}
           </label>
           <input
             className="input"
             type="text"
             name="query"
-            placeholder="number, color, pattern"
+            placeholder="Search by number or pattern"
             value={search}
             onChange={onSearchChange}
           />
+          <button onClick={clearSearch}>
+            {/* <i className="material-icons" style={{ display: "inlineBlock" }}>
+            close
+          </i> */}
+            Clear Search
+          </button>
         </form>
-      </div> */}
+      </div>
 
       <Grid container direction="column">
         <Grid item>
