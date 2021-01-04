@@ -87,7 +87,8 @@ export const beads = [
   { number: "0458", patterns: "Hummingbird Tile" },
   { number: "0879", patterns: "Hummingbird Tile" },
   { number: "0864", patterns: "Hummingbird Tile" },
-  // { number: '0274', patterns: 'Hummingbird Tile' },
+
+  
   { number: "0985", patterns: "Hummingbird Tile" },
   { number: "0917", patterns: "Hummingbird Tile" },
   { number: "0459", patterns: "Hummingbird Tile" },

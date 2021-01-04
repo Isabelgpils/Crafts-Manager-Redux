@@ -159,6 +159,7 @@ const Header = () => {
         </ul>
       </div>
       <Switch>
+        <Route path="/home" component={BeadList}></Route>
         <Route path="/Search Beads" component={SearchBeads}></Route>
         <Route path="/Search Metallics" component={SearchMetallics}></Route>
         <Route path="/Search DMC" component={SearchDMC}></Route>
