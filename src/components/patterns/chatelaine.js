@@ -9,7 +9,7 @@ import mossGarden2 from './images/mossGarden2.jpg';
 import portager2 from './images/portager2.jpg';
 import waterGarden from './images/waterGarden.jpg';
 import vinery from './images/vinery.jpg';
-import hummingbird from './images/hummingbird.jpg';
+import hummingbird from './images/hummingbird2.jpg';
 import persianIris from './images/persianIris.jpg';
 import PeacockTile from './images/PeacockTile.jpg';
 import hangingGardens from './images/hanging1.jpg';

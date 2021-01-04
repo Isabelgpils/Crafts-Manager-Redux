@@ -2,7 +2,7 @@ import cottageFairy from './images/cottageFairy.jpg';
 import geranium from './images/geranium.jpg';
 import empty from './images/empty.jpg';
 import gypsy from './images/gypsy2.jpg';
-import buttercup from './images/buttercup.jpg';
+import buttercup from './images/buttercup2.jpg';
 import sapphireFairy from './images/sapphireFairy.jpg';
 
 
