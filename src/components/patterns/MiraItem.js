@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
 const MiraItem = (props) => {
-
+	const progress = props.status == 1 ? "not started" : props.status == 2 ? "in progress" : "completed";
 	const useStyles = makeStyles({
 		root: {
 			maxWidth: 1200,
@@ -43,7 +43,9 @@ const MiraItem = (props) => {
 					<Typography variant="h6" color="textSecondary" component="h6">
 						Size: {props.size} stitches
 					</Typography>
-
+					<Typography variant="h6" color="blue" component="h6">
+						Status: {progress}
+					</Typography>
 				</CardContent>
 			</CardActionArea>
 			<CardActions>

@@ -4,6 +4,7 @@ import MiraItem from './MiraItem';
 import { miras } from './miras.js';
 
 const MiraList = (props) => {
+
 	const allPatterns = miras.map((pattern) => {
 		return (
 			<MiraItem
@@ -15,6 +16,7 @@ const MiraList = (props) => {
 				thumbnail={pattern.thumbnail}
 				number={pattern.number}
 				size={pattern.size}
+				status={pattern.status}
 			/>
 		);
 	});
