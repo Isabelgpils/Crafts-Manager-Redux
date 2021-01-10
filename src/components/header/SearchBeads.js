@@ -94,26 +94,4 @@ const SearchBeads = () => {
   );
 };
 
-{
-  /* <Grid container direction="column">
-        <Grid item>
-          <Grid style={{ margin: "1%" }} item container />
-          <Grid item xs={false} sm={2} /> */
-}
-{
-  /* on xsmall screens=no gutter  */
-}
-{
-  /* <Grid item xs={12}>
-            <Grid item container>
-              {allBeads}
-            </Grid>
-          </Grid>
-          <Grid item xs={false} sm={2} />
-        </Grid>
-      </Grid>
-    </Fragment>
-  );
-}; */
-}
 export default SearchBeads;
