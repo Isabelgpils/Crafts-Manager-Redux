@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
 const MiraItem = (props) => {
-	const progress = props.status == 1 ? "not started" : props.status == 2 ? "in progress" : "completed";
+	const progress = props.status === 1 ? "not started" : props.status === 2 ? "in progress" : "completed";
 	const useStyles = makeStyles({
 		root: {
 			maxWidth: 1200,
