@@ -7,15 +7,8 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-import TGList from "./TGList";
 
 const ThreadItem = props => {
-  // const threadBrand =
-  //   props.brand == "Gloriana"
-  //     ? "Glo"
-  //     : props.brand == "Caron Waterlilies"
-  //     ? "WL"
-  //     : "TG";
 
   const useStyles = makeStyles({
     root: {
@@ -24,10 +17,7 @@ const ThreadItem = props => {
       marginTop: "1rem",
       border: "solid grey 1px"
     },
-    // maxWidth: 600,
-    // margin: '25px',
-    // marginTop: '25px',
-    // border: 'solid grey 1px'
+
     media: {
       height: 300,
       width: 300,
@@ -36,8 +26,7 @@ const ThreadItem = props => {
   });
 
   const classes = useStyles();
-  // const fontColor = props.dark ? 'white' : 'lightBlack';
-  // const cardColor = props.dmc === 'none' ? 'darkgrey' : `rgb(${props.rgb})`;
+
   return (
     <Card className={classes.root}>
       <CardActionArea>
@@ -50,7 +39,6 @@ const ThreadItem = props => {
           variant="h5"
           component="h5"
         >
-          {/* {threadBrand} */}
           {props.number}
         </Typography>
         <CardMedia
@@ -74,7 +62,6 @@ const ThreadItem = props => {
           >
             {props.color}
           </Typography>
-          {/* ["h1","h2","h3","h4","h5","h6","subtitle1","subtitle2","body1","body2","caption","button","overline","srOnly","inherit"]. */}
 
           <Typography
             style={{ marginTop: "1%", color: "rgb(56,64,88)" }}
