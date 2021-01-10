@@ -1,6 +1,5 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import ThreadItem from "./ThreadItem";
 import { dinky } from "./dinky";
 import DinkyItem from "./DinkyItem";
 
