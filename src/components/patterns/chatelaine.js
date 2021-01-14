@@ -70,12 +70,10 @@ export const chatelaine = [
 		number: 52, size: "293 x 293", image: persianIris, name: 'The Persian Iris Garden Mandala', brand: 'Chatelaine',
 		thumbnail: "https://chatelaine.de/wp-content/uploads/edd/2017/07/apricot.jpg"
 	},
-
 	{
 		number: 69, size: "265 x 205 ", image: hangingGardens, name: 'The Hanging Gardens of Semiramis', brand: 'Chatelaine',
 		thumbnail: "http://chatelaine.de/wp-content/uploads/edd/2016/01/chat-069-hang-gard-black.jpg"
 	},
-
 	{
 		number: 155, size: "310 x 310", image: tinctorium, name: 'The Tinctorium Mandala', brand: 'Chatelaine',
 		thumbnail: "https://chatelaine.de/wp-content/uploads/edd/2017/11/155-Tincto-768x739.png"
