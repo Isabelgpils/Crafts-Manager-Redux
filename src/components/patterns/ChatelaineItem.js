@@ -23,7 +23,6 @@ const ChatelaineItem = (props) => {
 		}
 	});
 
-	// export default function patternMedia() {
 	const classes = useStyles();
 
 	return (
