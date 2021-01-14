@@ -27,15 +27,11 @@ const BeadItem = props => {
   });
 
   const classes = useStyles();
-  // const fontColor = props.dark ? 'white' : 'lightBlack';
 
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        {/* <CardMedia className={classes.media} image={`https://image1.fmgstatic.com/images/db${props.number}-11-round---pdb${props.number}vb.jpg`}
-					title="beads" /> */}
-        {/* Fire Mountain Beads website */}
-        <Typography
+         <Typography
           style={{
             textAlign: "center",
             padding: "10px",
@@ -61,10 +57,7 @@ const BeadItem = props => {
             backgroundColor: "lightGrey"
           }}
         >
-          {/* 
-					<Typography style={{ color: "rgb(56,64,88)" }} variant="h5" component="h3">
-						{props.number}
-					</Typography> */}
+
           <Typography
             style={{ margin: "15px 0", color: "rgb(56,64,88)" }}
             variant="h5"
