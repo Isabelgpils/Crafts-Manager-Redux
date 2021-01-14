@@ -17,7 +17,6 @@ const SearchMetallics = () => {
 
   const filteredItems = metallics.filter(item => {
     const lowerCaseSearch = search.toLowerCase();
-    // const hasItemDmc = item.dmc.toString().toLowerCase().includes(lowerCaseSearch);
     const hasItemNumber = (item.number || "")
       .toString()
       .includes(lowerCaseSearch);
@@ -36,7 +35,7 @@ const SearchMetallics = () => {
   const allItems = filteredItems.map(item => {
     return (
       <MetallicItem
-        key={`${item.type}${item.number}`}
+        key={`${item.patterns}${item.number}`}
         number={item.number}
         color={item.color}
         type={item.type}
@@ -53,8 +52,6 @@ const SearchMetallics = () => {
           className="form"
           onSubmit={handleSubmit}
           style={{
-            // backgroundColor: "#1ABC9C",
-            // color: "#2c3e50",
             padding: "1%"
           }}
         >
@@ -74,9 +71,6 @@ const SearchMetallics = () => {
             onChange={onSearchChange}
           />
           <button onClick={clearSearch}>
-            {/* <i className="material-icons" style={{ display: "inlineBlock" }}>
-            close
-          </i> */}
             Clear Search
           </button>
         </form>
