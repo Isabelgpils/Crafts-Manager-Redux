@@ -1,16 +1,15 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import BeadItem from "./BeadItem";
-import { beads } from "./beads";
+import { beadsMain } from "./beadsMain";
 
 const BeadList = props => {
-  const sortedBeads = beads.sort((a, b) => a.number - b.number);
+  const sortedBeads = beadsMain.sort((a, b) => a.number - b.number);
   const allBeads = sortedBeads.map(bead => {
     return (
       <BeadItem
-        key={`${bead.patterns}-${bead.number}`}
+        key={bead.number}
         number={bead.number}
-        patterns={bead.patterns}
         message={bead.message}
         image={bead.image}
       />

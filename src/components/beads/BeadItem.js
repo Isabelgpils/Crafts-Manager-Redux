@@ -31,7 +31,7 @@ const BeadItem = props => {
   return (
     <Card className={classes.root}>
       <CardActionArea>
-         <Typography
+        <Typography
           style={{
             textAlign: "center",
             padding: "10px",
@@ -70,7 +70,7 @@ const BeadItem = props => {
             variant="h6"
             component="h6"
           >
-            Pattern: {props.patterns}
+            {/* Pattern: {props.patterns} */}
           </Typography>
         </CardContent>
       </CardActionArea>
