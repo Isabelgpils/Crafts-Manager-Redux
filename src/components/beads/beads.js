@@ -211,7 +211,6 @@ export const beads = [
   { number: "0237", patterns: "Tinctorium" },
   { number: '0276', patterns: 'Tinctorium' },
   { number: "0626", patterns: "Tinctorium" },
-  { number: '0694', patterns: 'Tinctorium' },
   { number: "0861", patterns: "Tinctorium" },
 
   //Vineyard
@@ -236,6 +235,6 @@ export const beads = [
   { number: '0501', patterns: 'Watergarden' },
   { number: '0622', patterns: 'Watergarden' },
   { number: '0670', patterns: 'Watergarden' },
-  { number: "0877", patterns: "Watergarden" }
+  { number: "0877", patterns: "Watergarden" },
   { number: '0010', patterns: 'Watergarden' }
 ];
