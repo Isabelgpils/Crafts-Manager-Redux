@@ -10,6 +10,7 @@ const BeadList = props => {
       <BeadItem
         key={bead.number}
         number={bead.number}
+        patterns={bead.patterns}
         message={bead.message}
         image={bead.image}
       />
