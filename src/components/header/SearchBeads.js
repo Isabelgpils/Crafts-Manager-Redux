@@ -32,7 +32,7 @@ const SearchBeads = () => {
   const allBeads = filteredBeads.map(bead => {
     return (
       <BeadItem
-        key={bead.number}
+        key={`${bead.patterns}${bead.number}`}
         number={bead.number}
         patterns={bead.patterns}
         image={`https://cdn.shopify.com/s/files/1/0805/4511/products/DB${bead.number}_200x.jpeg?v=1568806569`}
