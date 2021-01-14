@@ -13,7 +13,6 @@ const MetallicItem = props => {
     root: {
       maxWidth: 300,
       margin: "25px",
-      // marginTop: '25px',
       border: "solid darkGrey 2px"
     },
     media: {
@@ -28,7 +27,6 @@ const MetallicItem = props => {
   });
 
   const classes = useStyles();
-  // const fontColor = props.dark ? 'white' : 'lightBlack';
 
   return (
     <Card className={classes.root}>
