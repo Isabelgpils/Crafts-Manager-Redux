@@ -62,28 +62,18 @@ const Header = () => {
       </ul>
       {/* Navbar */}
       <div className="navbar-fixed">
-        <nav>
-          {/*nav wrapper*/}
-          <div className="nav-wrapper">
-            {/*LOGO*/}
+        <nav> {/*nav wrapper*/}
+          <div className="nav-wrapper">  {/*LOGO*/}
             <div id="logo" className="brand-logo">
               Craft Manager
             </div>
-
-            {/*SIDE NAVIGATION*/}
-            <a href="#" data-target="mobile-demo" className="sidenav-trigger">
-              <i className="material-icons">menu</i>
-            </a>
-            <ul
-              id="nav-mobile"
-              className="right hide-on-med-and-down"
-              style={{ marginLeft: "1rem", marginRight: "1rem" }}
-            >
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
               {/*Dropdown Trigger SEARCH*/}
               <li>
                 <a
                   className="dropdown-trigger"
-                  href="#"
+                  href="#!"
                   data-target="dropdown1"
                 >
                   Search
@@ -121,43 +111,47 @@ const Header = () => {
             </ul>
           </div>
         </nav>
-
-        <ul className="sidenav" id="mobile-demo">
-          <li>
-            <Link to="/Search Beads">Search Beads</Link>
-          </li>
-          <li>
-            <Link to="/Search Metallics">Search Metallics</Link>
-          </li>
-          <li>
-            <Link to="/Search DMC">Search DMC</Link>
-          </li>
-          <li>
-            <Link to="/DMC">DMC Thread</Link>
-          </li>
-          <li>
-            <Link to="/Dinky Dyes">Dinky Dyes</Link>
-          </li>
-          <li>
-            <Link to="/Gloriana">Gloriana</Link>
-          </li>
-          <li>
-            <Link to="/Caron Waterlilies">Caron Waterlilies</Link>
-          </li>
-          <li>
-            <Link to="/Thread Gatherer">Thread Gatherer</Link>
-          </li>
-          <li>
-            <Link to="/Chatelaine">Chatelaine</Link>
-          </li>
-          <li>
-            <Link to="/Mirabilia">Mirabilia</Link>
-          </li>
-          <li>
-            <Link to="/Samplers">Samplers</Link>
-          </li>
-        </ul>
       </div>
+
+      {/*SIDE NAVIGATION*/}
+      <ul className="sidenav" id="mobile-demo">
+        <li>
+          <Link to="/Search Beads">Search Beads</Link>
+        </li>
+        <li>
+          <Link to="/Search Metallics">Search Metallics</Link>
+        </li>
+        <li>
+          <Link to="/Search DMC">Search DMC</Link>
+        </li>
+        <li>
+          <Link to="/DMC">DMC Thread</Link>
+        </li>
+        <li>
+          <Link to="/Dinky Dyes">Dinky Dyes</Link>
+        </li>
+        <li>
+          <Link to="/Gloriana">Gloriana</Link>
+        </li>
+        <li>
+          <Link to="/Caron Waterlilies">Caron Waterlilies</Link>
+        </li>
+        <li>
+          <Link to="/Thread Gatherer">Thread Gatherer</Link>
+        </li>
+        <li>
+          <Link to="/Chatelaine">Chatelaine</Link>
+        </li>
+        <li>
+          <Link to="/Mirabilia">Mirabilia</Link>
+        </li>
+        <li>
+          <Link to="/Samplers">Samplers</Link>
+        </li>
+      </ul>
+
+
+
       <Switch>
         <Route path="/home" component={BeadList}></Route>
         <Route path="/Search Beads" component={SearchBeads}></Route>
