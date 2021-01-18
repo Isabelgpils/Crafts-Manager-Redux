@@ -16,7 +16,7 @@ import hangingGardens from './images/hanging1.jpg';
 import tinctorium from './images/tinctorium.jpg';
 import rainforest from './images/rainforest2.jpg';
 import fairy from './images/fairy.jpg';
-import empty from './images/empty.jpg';
+import empty from './images/empty4.jpg';
 
 
 

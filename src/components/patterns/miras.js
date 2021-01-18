@@ -1,6 +1,6 @@
 import cottageFairy from './images/cottageFairy.jpg';
 import geranium from './images/geranium.jpg';
-import empty from './images/empty.jpg';
+import empty from './images/empty4.jpg';
 import gypsy from './images/gypsy2.jpg';
 import buttercup from './images/buttercup2.jpg';
 import sapphireFairy from './images/sapphireFairy.jpg';
