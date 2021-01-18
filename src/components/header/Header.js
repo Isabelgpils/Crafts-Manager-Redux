@@ -67,8 +67,8 @@ const Header = () => {
             <div id="logo" className="brand-logo">
               Craft Manager
             </div>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
+            <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+            <ul className="right hide-on-med-and-down">
               {/*Dropdown Trigger SEARCH*/}
               <li>
                 <a
