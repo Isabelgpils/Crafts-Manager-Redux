@@ -83,7 +83,7 @@ const Header = () => {
               <li>
                 <a
                   className="dropdown-trigger"
-                  href="#!"
+                  href="#"
                   data-target="dropdown1"
                 >
                   Search
