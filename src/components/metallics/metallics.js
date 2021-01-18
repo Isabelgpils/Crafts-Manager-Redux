@@ -1,5 +1,5 @@
 export const metallics = [
-  { type: 'PB', number: '01', patterns: ["Fairy Flora", "Hanging Gardens", "Little Tuscany", "Persian Iris", "Watergarden"], color: "Bright Gold" },
+  { type: "PB", number: "01", patterns: ["Fairy Flora", "Hanging Gardens", "Little Tuscany", "Persian Iris", "Watergarden"], color: "Bright Gold" },
   { type: "PB", number: "02", patterns: ["Consolation", "Hydrangea"], color: "Arctic Gold" },
   { type: "PB", number: "04", patterns: ["Fairy Flora", "Moss Garden", "Tinctorium"], color: "Silver" },
   { type: "PB", number: "05", patterns: ["Arabian", "French Kitchen Garden", "Rainforest"], color: "Black" },
@@ -10,9 +10,9 @@ export const metallics = [
   { type: "PB", number: "14", patterns: ["Sparkling Peacock"], color: "Bronze" },
   { type: "PB", number: "17", patterns: ["Hanging Gardens", "Moss Garden"], color: "Water Blue" },
 
-  { type: 'PB', number: '20', patterns: ["Consolation", "Peacock Tile"], color: 'Green' },
+  { type: "PB", number: "20", patterns: ["Consolation", "Peacock Tile"], color: 'Green' },
   { type: "PB", number: "21", patterns: ["Hydrangea"], color: "Copper" },
-  { type: 'PB', number: '25', patterns: ["French Kitchen Garden", "Seville"], color: 'Old Gold' },
+  { type: "PB", number: "25", patterns: ["French Kitchen Garden", "Seville"], color: 'Old Gold' },
   { type: "PB", number: "26", patterns: ["Hanging Gardens", "Mini Mandelas", "Moss Garden", "Rainforest"], color: "Aztec Gold" },
   { type: "PB", number: "31", patterns: ["Rainforest"], color: "Evergreen" },
   { type: "PB", number: "32", patterns: ["Mini Mandelas"], color: "Pewter" },
@@ -42,9 +42,9 @@ export const metallics = [
   { type: "SP", number: "021", patterns: ["Sparkling Peacock"] },
   { type: "SP", number: "032", patterns: ["Vineyard"] },
   { type: "SP", number: "035", patterns: ["Moss Garden", "Vineyard"] },
-  { type: 'SP', number: '036', patterns: ["Seville"] },
+  { type: 'SP', number: "036", patterns: ["Seville"] },
   { type: "SP", number: "038", patterns: ["Little Tuscany", "Rainforest", "Sparkling Peacock"] },
-  { type: 'SP', number: '039', patterns: ["Seville", "Sparkling Peacock"] },
+  { type: 'SP', number: "039", patterns: ["Seville", "Sparkling Peacock"] },
   { type: "SP", number: "058", patterns: ["Seville"] },
   { type: "SP", number: "047", patterns: ["Fairy Flora"], color: "Fosty Sparkle" },
   { type: "SP", number: "051", patterns: ["French Kitchen Garden"] },
@@ -58,7 +58,7 @@ export const metallics = [
   { type: "SP", number: "119", patterns: ["Gothic Arch"], color: "Blue Sapphire" },
   { type: "SP", number: "139", patterns: ["Gothic Arch"] },
   { type: "SP", number: "183", patterns: ["Gothic Arch"] },
-  { type: 'SP', number: "113", patterns: ["Moss Garden", "Gothic Arch", "Peacock Tile", "Sparkling Peacock", "Vineyard"] },
+  { type: "SP", number: "113", patterns: ["Moss Garden", "Gothic Arch", "Peacock Tile", "Sparkling Peacock", "Vineyard"] },
   { type: "SP", number: "118", patterns: ["Sparkling Peacock"], color: "Sea Spray" }
 
 

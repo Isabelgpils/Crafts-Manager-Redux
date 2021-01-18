@@ -18,12 +18,12 @@ const SearchMetallics = () => {
   const filteredItems = metallics.filter(item => {
     const lowerCaseSearch = search.toLowerCase();
     const hasItemNumber = (item.number || "")
-      .toString()
+
       .includes(lowerCaseSearch);
     const hasItemColor = (item.color || "")
       .toLowerCase()
       .includes(lowerCaseSearch);
-    const hasItemPattern = (item.patterns || "")
+    const hasItemPattern = (item.patterns[0] || "")
       .toLowerCase()
       .includes(lowerCaseSearch);
     const hasItemType = (item.type || "")
@@ -60,7 +60,7 @@ const SearchMetallics = () => {
             className="label"
             htmlFor="query"
           >
-            {/* Search Beads */}
+
           </label>
           <input
             className="input"

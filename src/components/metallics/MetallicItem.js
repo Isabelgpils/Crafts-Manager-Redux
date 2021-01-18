@@ -68,7 +68,7 @@ const MetallicItem = props => {
             variant="subtitle1"
             component="h6"
           >
-            Pattern: {props.patterns}
+            Pattern: {props.patterns[0]}
           </Typography>
         </CardContent>
       </CardActionArea>
