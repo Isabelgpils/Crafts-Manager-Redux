@@ -33,7 +33,7 @@ const ChatelaineItem = (props) => {
 				</Typography>
 
 				<CardMedia style={{ display: "inline-block" }} className={classes.media} image={props.thumbnail} title={props.name} />
-				<CardMedia style={{ display: "inline-block" }} className={classes.media} image={props.image} title={props.name} />
+				<CardMedia style={{ display: "inline-block" }} className={classes.media} image={props.image} title={`${props.name} - in progress`} />
 				<CardContent style={{ backgroundColor: "lightGrey" }}>
 					<Typography gutterBottom variant="h5" component="h5">
 						{props.brand} {props.number}
