@@ -69,7 +69,6 @@ export const beadsMain = [
 
 
     //French Kitchen Garden
-    { number: '0747', patterns: ['French Kitchen Garden'] },
     { number: "0779", patterns: ["French Kitchen Garden"] },
     { number: "1790", patterns: ["French Kitchen Garden"] },
 
