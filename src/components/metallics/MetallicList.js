@@ -11,7 +11,7 @@ const MetallicList = props => {
         key={`${metallic.type}-${metallic.number} ${metallic.patterns}`}
         number={metallic.number}
         color={metallic.color}
-        patterns={metallic.patterns}
+        patterns={metallic.patterns[0]}
         type={metallic.type}
         image={`https://www.123stitch.com/pictures/${props.type}${props.number}.jpg`}
       />

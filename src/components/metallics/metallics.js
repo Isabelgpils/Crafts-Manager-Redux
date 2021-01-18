@@ -59,7 +59,7 @@ export const metallics = [
   { type: "SP", number: "139", patterns: ["Gothic Arch"] },
   { type: "SP", number: "183", patterns: ["Gothic Arch"] },
   { type: 'SP', number: "113", patterns: ["Moss Garden", "Gothic Arch", "Peacock Tile", "Sparkling Peacock", "Vineyard"] },
-  { type: "SP", number: "118", patterns: "Sparkling Peacock", color: "Sea Spray" }
+  { type: "SP", number: "118", patterns: ["Sparkling Peacock"], color: "Sea Spray" }
 
 
 
