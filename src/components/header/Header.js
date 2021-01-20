@@ -14,10 +14,21 @@ import MetallicList from "../metallics/MetallicList";
 import SearchMetallics from "./SearchMetallics.js";
 import SearchBeads from "./SearchBeads.js";
 import SearchDMC from "./SearchDMC.js";
+import dmc from "./dmc.png"
 
+const Home = () => {
+  return (
+    <div>
+      <h1 id="headline">Spend less time organizing and more time stitching. </h1>
+      <h2 id="sub-headline">View and search threads, beads and cross stitch patterns.</h2>
+      <img id="home-image" src={dmc} alt="dmc thread" />
+    </div>
+  )
+}
 const Header = () => {
   return (
     <Fragment>
+
       {/*Dropdown Structure SEARCH*/}
       <ul id="dropdown1" className="dropdown-content">
         <li>
@@ -69,6 +80,10 @@ const Header = () => {
             </div>
             <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
             <ul className="right hide-on-med-and-down">
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+
               {/*Dropdown Trigger SEARCH*/}
               <li>
                 <a
@@ -153,7 +168,8 @@ const Header = () => {
 
 
       <Switch>
-        <Route path="/home" component={BeadList}></Route>
+
+        <Route exact path="/" component={Home}></Route>
         <Route path="/Search Beads" component={SearchBeads}></Route>
         <Route path="/Search Metallics" component={SearchMetallics}></Route>
         <Route path="/Search DMC" component={SearchDMC}></Route>
