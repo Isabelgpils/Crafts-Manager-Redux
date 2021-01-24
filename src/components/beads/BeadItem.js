@@ -4,9 +4,9 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
+import Inventory from '../Inventory';
 
 const BeadItem = props => {
   const useStyles = makeStyles({
@@ -75,12 +75,7 @@ const BeadItem = props => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="medium" style={{ marginLeft: "15px" }}>
-          In Stash
-        </Button>
-        <Button size="medium" style={{ marginLeft: "95px" }}>
-          Need
-        </Button>
+        <Inventory />
       </CardActions>
     </Card>
   );

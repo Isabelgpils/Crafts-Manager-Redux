@@ -28,9 +28,9 @@ const SilkList = () => {
           {/* on xsmall screens=no gutter  */}
           <Grid item xs={12}>
             <Grid item container style={{ margin: "auto" }}>
-              <h5 style={{ margin: "5%" }}>
+              <h3 style={{ margin: "5% auto" }}>
                 Caron Waterlilies
-              </h5>
+              </h3>
             </Grid>
           </Grid>
           <Grid item container>

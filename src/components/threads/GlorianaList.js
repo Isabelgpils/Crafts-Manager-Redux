@@ -28,7 +28,7 @@ const GlorianaList = () => {
           {/* on xsmall screens=no gutter  */}
           <Grid item xs={12}>
             <Grid item container style={{ margin: "auto" }}>
-              <h5 style={{ margin: "5%" }}>Gloriana Threads</h5>
+              <h3 style={{ margin: "5% auto" }}>Gloriana</h3>
             </Grid>
           </Grid>
           <Grid item container>
