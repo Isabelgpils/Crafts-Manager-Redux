@@ -4,12 +4,11 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
 
-const SilkItem2 = (props) => {
+const TGItem = (props) => {
 	const useStyles = makeStyles({
 		root: {
 			maxWidth: 300,
@@ -45,42 +44,10 @@ const SilkItem2 = (props) => {
 				</CardContent>
 			</CardActionArea>
 			<CardActions>
-				<Button size="small" color="primary">
-					In Stash
-				</Button>
-				<Button size="small" color="primary">
-					Need
-				</Button>
+				<Inventory />
 			</CardActions>
 		</Card>
 	);
 };
 
-export default SilkItem2;
-// return (
-// 	<div className="card">
-// 		<div className="card-image">
-// 			<img src={props.image} alt="patterns" />
-// 			<span className="card-title" />
-// 		</div>
-// 		<div className="card-content">
-// 			<p>
-
-// 			</p>
-// 		</div>
-// 	</div>
-//  <div style={{ marginTop: '20px' }} className="ui cards">
-// 		<div className="card" style={{ backgroundColor: 'whitesmoke' }}>
-// 			<div className="content">
-// 				<h5>
-// 					{props.name} - {props.brand}{' '}
-// 				</h5>
-// 				<img
-// 					className="ui centered image"
-// 					style={{ border: '8px solid darkGrey' }}
-// 					src={props.image}
-// 					alt="pattern"
-// 				/>
-// 			</div>
-// 		</div>
-// 	</div>
+export default TGItem;
