@@ -16,8 +16,6 @@ import SearchBeads from "./SearchBeads.js";
 import SearchDMC from "./SearchDMC.js";
 import dmc from "./dmc.png";
 
-// import SignInForm from "../SignIn/SignInForm";
-
 
 const Home = () => {
   return (
@@ -25,12 +23,9 @@ const Home = () => {
       <h1 id="headline">Spend less time organizing and more time stitching. </h1>
       <h2 id="sub-headline">View and search threads, beads and cross stitch patterns.</h2>
       <img id="home-image" src={dmc} alt="dmc thread" />
-      {/* <SignInForm /> */}
-
     </div>
   )
 }
-
 
 const Header = () => {
   return (

@@ -8,7 +8,7 @@ const Inventory = () => {
     const [inventory, setInventory] = useState('');
     return (
         <div>
-            <Typography style={{ textAlign: "center", color: "rgb(56,64,88)", color: "white", background: "darkGrey" }} variant="h6" component="h6">
+            <Typography style={{ textAlign: "center", color: "white", background: "darkGrey" }} variant="h6" component="h6">
                 {inventory}
             </Typography >
             <Button size="medium" onClick={() => setInventory('In Stash')} style={{ marginLeft: "25px" }} >
