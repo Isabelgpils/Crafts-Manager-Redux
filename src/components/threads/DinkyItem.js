@@ -7,6 +7,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+import Inventory from './Inventory';
 
 
 const DinkyItem = (props) => {
@@ -48,12 +49,13 @@ const DinkyItem = (props) => {
 				</CardContent>
 			</CardActionArea>
 			<CardActions >
-				<Button size="medium" style={{ marginLeft: "25px" }} >
+				{/* <Button size="medium" style={{ marginLeft: "25px" }} >
 					In Stash
 				</Button>
 				<Button size="medium" style={{ marginLeft: "85px" }} >
 					Need
-				</Button>
+				</Button> */}
+				<Inventory />
 			</CardActions>
 		</Card>
 	);
