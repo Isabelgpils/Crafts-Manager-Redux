@@ -47,8 +47,6 @@ const SearchBeads = () => {
           className="form"
           onSubmit={handleSubmit}
           style={{
-            // backgroundColor: "#1ABC9C",
-            // color: "#2c3e50",
             padding: "1%"
           }}
         >
@@ -68,9 +66,6 @@ const SearchBeads = () => {
             onChange={onSearchChange}
           />
           <button onClick={clearSearch}>
-            {/* <i className="material-icons" style={{ display: "inlineBlock" }}>
-            close
-          </i> */}
             Clear Search
           </button>
         </form>

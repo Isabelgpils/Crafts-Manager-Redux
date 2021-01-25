@@ -2,7 +2,6 @@ import React, { useState, Fragment } from "react";
 import { dmcThreads } from "../threads/dmc";
 import { Grid } from "@material-ui/core";
 import DmcItem from "../threads/DmcItem.js";
-import { darkslategrey } from "color-name";
 
 const SearchCrafts = () => {
   const [search, setSearch] = useState("");
@@ -46,8 +45,6 @@ const SearchCrafts = () => {
           className="form"
           onSubmit={handleSubmit}
           style={{
-            // backgroundColor: "#1ABC9C",
-            // color: "#2c3e50",
             padding: "1%"
           }}
         >
@@ -65,9 +62,6 @@ const SearchCrafts = () => {
             onChange={onSearchChange}
           />
           <button onClick={clearSearch}>
-            {/* <i className="material-icons" style={{ display: "inlineBlock" }}>
-            close
-          </i> */}
             Clear Search
           </button>
         </form>
