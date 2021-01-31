@@ -1,18 +1,19 @@
-import dragonfly3 from './images/dragonfly3.jpg';
+import dragonfly from './images/dragonfly3.jpg';
+import arabian from './images/arabian.jpg';
 import gothicArch from './images/gothicArch.jpg';
-import granada2 from './images/granada2.jpg';
+import granada from './images/granada2.jpg';
 import herbularus from './images/herbularus.jpg';
 import hortager from './images/hortager.jpg';
 import hydrangea from './images/hydrangea.jpg';
-import miniTuscany2 from './images/miniTuscany2.jpg';
-import mossGarden2 from './images/mossGarden2.jpg';
-import portager2 from './images/portager2.jpg';
-import waterGarden from './images/waterGarden.jpg';
-import vinery from './images/vinery.jpg';
-import hummingbird from './images/hummingbird2.jpg';
+import miniTuscany from './images/miniTuscany2.jpg';
+import mossGarden from './images/mossGarden2.jpg';
+import portager from './images/portager2.jpg';
+import waterGarden from './images/watergarden3.jpg';
+import vinery from './images/vinery2.jpg';
+import hummingbird from './images/hummingbird3.jpg';
 import persianIris from './images/persianIris.jpg';
-import PeacockTile from './images/PeacockTile.jpg';
-import hangingGardens from './images/hanging1.jpg';
+import peacock from './images/peacock2.jpg';
+import hangingGardens from './images/hangingGardens3.jpg';
 import tinctorium from './images/tinctorium.jpg';
 import rainforest from './images/rainforest2.jpg';
 import fairy from './images/fairy.jpg';
@@ -27,7 +28,7 @@ export const chatelaine = [
 		thumbnail: "https://chatelaine.de/wp-content/uploads/edd/2015/02/Onl-107-Hydrag-Autumn.jpg"
 	},
 	{
-		number: 16, size: "330 x 330", image: portager2, name: 'The French Farmhouse Potager Mandala', brand: 'Chatelaine',
+		number: 16, size: "330 x 330", image: portager, name: 'The French Farmhouse Potager Mandala', brand: 'Chatelaine',
 		thumbnail: "https://chatelaine.de/wp-content/uploads/edd/2015/03/Myst-16-white.jpg"
 	},
 	{
@@ -39,7 +40,7 @@ export const chatelaine = [
 		thumbnail: "https://chatelaine.de/wp-content/uploads/edd/2015/03/Onl-072-Herbularius-white.jpg"
 	},
 	{
-		number: 116, size: "129 x 129", image: dragonfly3, name: 'Beaded Dragonfly Tile', brand: 'Chatelaine',
+		number: 116, size: "129 x 129", image: dragonfly, name: 'Beaded Dragonfly Tile', brand: 'Chatelaine',
 		thumbnail: "http://chatelaine.de/wp-content/uploads/edd/2015/02/Image31.jpg"
 	},
 	{
@@ -47,7 +48,7 @@ export const chatelaine = [
 		thumbnail: "https://chatelaine.de/wp-content/uploads/edd/2015/08/Onl-117-white.jpg"
 	},
 	{
-		number: 203, size: "119 x 119", image: miniTuscany2, name: 'Little Tuscany Mandala', brand: 'Chatelaine',
+		number: 203, size: "119 x 119", image: miniTuscany, name: 'Little Tuscany Mandala', brand: 'Chatelaine',
 		thumbnail: "https://chatelaine.de/wp-content/uploads/edd/2017/11/202-Ital-Mini-.png"
 	},
 	{
@@ -55,7 +56,7 @@ export const chatelaine = [
 		thumbnail: "http://chatelaine.de/wp-content/uploads/edd/2016/01/Onl-022-Watergarden.jpg"
 	},
 	{
-		number: 137, image: granada2, size: "369 x 369 ", name: 'Seville Alcazar Garden Mandala', brand: 'Chatelaine',
+		number: 137, image: granada, size: "369 x 369 ", name: 'Seville Alcazar Garden Mandala', brand: 'Chatelaine',
 		thumbnail: "https://chatelaine.de/wp-content/uploads/edd/2015/03/Onl-137-white.jpg"
 	},
 	{
@@ -63,7 +64,7 @@ export const chatelaine = [
 		thumbnail: "https://chatelaine.de/wp-content/uploads/edd/2017/11/212-teal-whte.jpg"
 	},
 	{
-		number: 128, size: "129 x 129", image: PeacockTile, name: 'Beaded Peacock Tile', brand: 'Chatelaine',
+		number: 128, size: "129 x 129", image: peacock, name: 'Beaded Peacock Tile', brand: 'Chatelaine',
 		thumbnail: "https://chatelaine.de/wp-content/uploads/edd/2015/07/ONL-128-Peacock-black.jpg"
 	},
 	{
@@ -79,7 +80,7 @@ export const chatelaine = [
 		thumbnail: "https://chatelaine.de/wp-content/uploads/edd/2017/11/155-Tincto-768x739.png"
 	},
 	{
-		number: 123, size: "325 x 325", image: mossGarden2, name: 'Japanese Zen Moss Garden Mandala', brand: 'Chatelaine',
+		number: 123, size: "325 x 325", image: mossGarden, name: 'Japanese Zen Moss Garden Mandala', brand: 'Chatelaine',
 		thumbnail: "https://chatelaine.de/wp-content/uploads/edd/2017/11/123-Jap-Moss-Gard-768x735.png"
 	},
 	{
@@ -96,7 +97,7 @@ export const chatelaine = [
 		thumbnail: "https://chatelaine.de/wp-content/uploads/edd/2015/06/ONL-032-Fairy-white.jpg"
 	},
 	{
-		number: 94, size: "317 x 208", image: empty, name: 'The Arabian Walled Garden', brand: 'Chatelaine',
+		number: 94, size: "317 x 208", image: arabian, name: 'The Arabian Walled Garden', brand: 'Chatelaine',
 		thumbnail: "http://chatelaine.de/wp-content/uploads/edd/2015/03/Onl-094-white.jpg"
 	},
 

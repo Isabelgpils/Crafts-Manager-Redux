@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import { Link, Switch, Route } from "react-router-dom";
-import style from "./style.css";
 import DmcList from "../threads/DmcList";
 import BeadList from "../beads/BeadList";
 import GlorianaList from "../threads/GlorianaList";
@@ -15,11 +14,11 @@ import SearchMetallics from "./SearchMetallics.js";
 import SearchBeads from "./SearchBeads.js";
 import SearchDMC from "./SearchDMC.js";
 import dmc from "./dmc.png";
-
+import "./style.css";
 
 const Home = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: "azure" }}>
       <h1 id="headline">Spend less time organizing and more time stitching. </h1>
       <h2 id="sub-headline">View and search threads, beads and cross stitch patterns.</h2>
       <img id="home-image" src={dmc} alt="dmc thread" />
@@ -80,7 +79,7 @@ const Header = () => {
             <div id="logo" className="brand-logo">
               Craft Manager
             </div>
-            <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+            <a href="#!" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
             <ul className="right hide-on-med-and-down">
               <li>
                 <Link to="/">Home</Link>
