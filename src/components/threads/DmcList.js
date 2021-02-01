@@ -21,6 +21,7 @@ const DmcList = props => {
       <Grid container direction="column">
         <Grid item style={{ marginLeft: "5%" }}>
           <Grid item container>
+
             <Grid item xs={false} sm={2} />
             {/* on xsmall screens=no gutter  */}
             <Grid item xs={12}>

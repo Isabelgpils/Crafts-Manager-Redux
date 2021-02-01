@@ -13,16 +13,17 @@ import MetallicList from "../metallics/MetallicList";
 import SearchMetallics from "./SearchMetallics.js";
 import SearchBeads from "./SearchBeads.js";
 import SearchDMC from "./SearchDMC.js";
-import dmc from "./dmc.png";
+import dmc from "./dmc2.png";
 import "./style.css";
 
 const Home = () => {
   return (
-    <div style={{ backgroundColor: "azure" }}>
+    <figure style={{ backgroundColor: "azure" }}>
       <h1 id="headline">Spend less time organizing and more time stitching. </h1>
       <h2 id="sub-headline">View and search threads, beads and cross stitch patterns.</h2>
       <img id="home-image" src={dmc} alt="dmc thread" />
-    </div>
+      <figcaption style={{ textAlign: "center" }}> Photo by Karly Santiago on Unsplash</figcaption>
+    </figure>
   )
 }
 
