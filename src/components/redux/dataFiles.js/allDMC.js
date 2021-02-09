@@ -1,4 +1,4 @@
-const allDMCReducer = () => {
+const allDMC = () => {
 	return [
 		//SALMON
 		{ dmc: 3713, color: 'Salmon Very Light', rgb: [255, 226, 226], dark: false },

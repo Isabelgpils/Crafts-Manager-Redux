@@ -1,5 +1,5 @@
 
-const allMetallicsReducer = () => {
+const allMetallics = () => {
 	return [
 		//Arabian
 		{ type: 'PB', number: '05', patterns: 'Arabian', color: 'Black' },

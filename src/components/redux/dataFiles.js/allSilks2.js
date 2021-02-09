@@ -1,4 +1,4 @@
-const allSilksReducer = () => {
+const allSilks2 = () => {
 	return [
 
 		{

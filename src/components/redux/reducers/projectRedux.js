@@ -11,7 +11,7 @@ const projectRedux = (state = null, action) => {
         case 'SILK_PROJECT':
             const prevSilkSelection = (state && state.selectSilk) || [];
             return { ...state, selectSilk: [...prevSilkSelection, action.payload] };
-        case 'METALLIC_SELECTED':
+        case 'METALLIC_PROJECT':
             const prevMetallicSelection = (state && state.selectMetallic) || [];
             return { ...state, selectMetallic: [...prevMetallicSelection, action.payload] };
 

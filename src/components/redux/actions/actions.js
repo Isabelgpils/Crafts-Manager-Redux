@@ -28,4 +28,10 @@ export const selectMetallic = (metallic) => {
 	};
 };
 
-
+// action creator for selecting metallics
+export const selectPattern = (metallic) => {
+	return {
+		type: 'PATTERN_SELECTED',
+		payload: pattern
+	};
+};

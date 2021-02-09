@@ -1,4 +1,4 @@
-const allSilksReducer = () => {
+const allSilks = () => {
 	return [
 		{ number: 49, brand: 'Gloriana', color: 'Wood Pond', dmc: 928, rgb: [183, 192, 184], image: "https://i.etsystatic.com/6090974/r/il/169e55/2029758619/il_794xN.2029758619_ldck.jpg" },
 		{ number: 87, brand: 'Gloriana', color: 'Forest', dmc: 935, rgb: [66, 77, 33], dark: true, image: "https://media.rainpos.com/3985/nth22063.jpg" },

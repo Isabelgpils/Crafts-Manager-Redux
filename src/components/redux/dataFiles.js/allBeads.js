@@ -1,4 +1,4 @@
-const allBeadsReducer = () => {
+const allBeads = () => {
 	return [
 		//Arabian
 		{ number: '0027', patterns: 'Arabian' },
