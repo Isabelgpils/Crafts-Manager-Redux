@@ -1,9 +1,38 @@
 import React from "react";
+import { connect } from 'react-redux';
+import { addBead } from './redux/actions/actions/ '
 import portager2 from "./patterns/images/portager2.jpg";
 import { Grid } from "@material-ui/core";
 import MetallicItem from "./metallics/MetallicItem";
 import SilkItem from "./threads/SilkItem";
 import BeadItem from "./beads/BeadItem";
+import React from 'react';
+
+
+const DmcList = ({ dmcs, addDmc, state, renderList }) => {
+  return dmcs.map((dmc) => {
+    return (
+      <div className="item" key={dmc.number}>
+        <div className="right floated content">
+          <button className="ui button" onClick={() => selectDmc(dmc)}>
+            View Detail
+						</button>
+        </div>
+        <div className="content" style={{ padding: '1rem', backgroundColor: `rgb(${dmc.rgb})` }}>
+          <h6>{dmc.dmc}</h6>
+          <h6>{dmc.color}</h6>
+        </div>
+        <div>{state}</div>
+      </div>
+    );
+  });
+
+}
+
+
+
+
+
 
 const Project = () => {
   //metallics

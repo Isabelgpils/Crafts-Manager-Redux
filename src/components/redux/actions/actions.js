@@ -1,37 +1,37 @@
 //action creator for selecting DMC thread
-export const selectDmc = (dmc) => {
+export const addDmc = (dmc) => {
 	return {
-		type: 'DMC_SELECTED',
+		type: 'ADD_DMC',
 		payload: dmc
 	};
 };
 //action creator for selecting beads
-export const selectBead = (bead) => {
+export const addBead = (bead) => {
 	return {
-		type: 'BEAD_SELECTED',
+		type: 'ADD_BEAD',
 		payload: bead
 	};
 };
 // action creator for selecting silk thread
-export const selectSilk = (silk) => {
+export const addSilk = (silk) => {
 	return {
-		type: 'SILK_SELECTED',
+		type: 'ADD_SILK',
 		payload: silk
 	};
 };
 
 // action creator for selecting metallics
-export const selectMetallic = (metallic) => {
+export const addMetallic = (metallic) => {
 	return {
-		type: 'METALLIC_SELECTED',
+		type: 'ADD_METALLIC',
 		payload: metallic
 	};
 };
 
 // action creator for selecting metallics
-export const selectPattern = (metallic) => {
+export const addPattern = (metallic) => {
 	return {
-		type: 'PATTERN_SELECTED',
+		type: 'ADD_PATTERN',
 		payload: pattern
 	};
 };

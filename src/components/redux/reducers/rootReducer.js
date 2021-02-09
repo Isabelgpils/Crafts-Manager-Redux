@@ -3,7 +3,7 @@ import metallicReducer from './metallicReducer';
 import beadReducer from './beadReducer';
 import DMCReducer from './DMCReducer';
 import silkReducer from './silkReducer';
-import selectedReducer from './selectedReducer';
+import projectReducer from './projectReducer';
 
 
 
@@ -13,7 +13,7 @@ export default combineReducers({
 	beads: beadReducer,
 	silks: silkReducer,
 	metallics: metallicReducer,
-	selectedReducer: selectedReducer,
+	projectReducer: projectReducer,
 
 
 
