@@ -2,7 +2,7 @@
 const INITIAL_STATE = {
     currentDMC: null
 }
-const dmcReducer = (state = INITIAL_STATE, action) => {
+const DMCReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case 'ADD_DMC':
             return {
