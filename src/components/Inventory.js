@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import basket from '../basket48.png';
-import circleX from '../circleX.png';
-import checkmark from '../checkmark48.png';
+import basket from '../icons/basket48.png';
+import circleX from '../icons/circleX.png';
+import checkmark from '../icons/checkmark48.png';
 
 const Inventory = () => {
-
 
     const [inventory, setInventory] = useState('');
 
