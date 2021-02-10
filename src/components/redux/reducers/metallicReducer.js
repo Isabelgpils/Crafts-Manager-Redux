@@ -6,11 +6,11 @@ const metallicReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case 'ADD_BEAD':
             return {
-                ...currentState,
+                ...state,
                 metallic: action.payload
             };
         default:
-            return currentState;
+            return state;
     }
 }
 

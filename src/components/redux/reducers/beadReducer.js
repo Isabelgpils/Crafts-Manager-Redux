@@ -6,11 +6,11 @@ const beadReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case 'ADD_BEAD':
             return {
-                ...currentState,
+                ...state,
                 bead: action.payload
             };
         default:
-            return currentState;
+            return state;
     }
 }
 

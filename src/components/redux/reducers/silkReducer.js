@@ -2,16 +2,16 @@
 const INITIAL_STATE = {
     currentSilk: null
 }
-const beadReducer = (state = INITIAL_STATE, action) => {
+const silkReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case 'ADD_SILK':
             return {
-                ...currentState,
+                ...state,
                 silk: action.payload
             };
         default:
-            return currentState;
+            return state;
     }
 }
 
-export default silkReducer; f
+export default silkReducer; 

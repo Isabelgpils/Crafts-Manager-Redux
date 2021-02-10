@@ -6,11 +6,11 @@ const DMCReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case 'ADD_DMC':
             return {
-                ...currentState,
+                ...state,
                 dmc: action.payload
             };
         default:
-            return currentState;
+            return state;
     }
 }
 

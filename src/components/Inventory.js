@@ -1,22 +1,27 @@
 import React, { useState } from 'react';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import basket from '../basket48.png';
+import circleX from '../circleX.png';
+import checkmark from '../checkmark48.png';
 
 const Inventory = () => {
 
 
     const [inventory, setInventory] = useState('');
+
     return (
         <div>
-            <Typography style={{ textAlign: "center", color: "white", background: "darkGrey" }} variant="h6" component="h6">
+
+            <Button size="medium" onClick={() => setInventory(<img src={checkmark} />)} style={{ marginLeft: "25px" }} >
+                Have
+				</Button>
+            <Button size="medium" onClick={() => setInventory(<img src={basket} />)} style={{ marginLeft: "85px" }} >
+                Need
+            </Button>
+            <Typography style={{ textAlign: "center" }} variant="h6" component="h6">
                 {inventory}
             </Typography >
-            <Button size="medium" onClick={() => setInventory('In Stash')} style={{ marginLeft: "25px" }} >
-                In Stash
-				</Button>
-            <Button size="medium" onClick={() => setInventory("Need")} style={{ marginLeft: "85px" }} >
-                Need
-				</Button>
         </div>
     )
 }

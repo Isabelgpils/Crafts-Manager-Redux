@@ -1,252 +1,31 @@
 import React from "react";
 import { connect } from 'react-redux';
-import { addBead } from './redux/actions/actions/ '
-import portager2 from "./patterns/images/portager2.jpg";
+// import { project } from './redux/actions/actions/'
 import { Grid } from "@material-ui/core";
 import MetallicItem from "./metallics/MetallicItem";
 import SilkItem from "./threads/SilkItem";
 import BeadItem from "./beads/BeadItem";
-import React from 'react';
 
+const Project = (props) => {
 
-const DmcList = ({ dmcs, addDmc, state, renderList }) => {
-  return dmcs.map((dmc) => {
-    return (
-      <div className="item" key={dmc.number}>
-        <div className="right floated content">
-          <button className="ui button" onClick={() => selectDmc(dmc)}>
-            View Detail
-						</button>
-        </div>
-        <div className="content" style={{ padding: '1rem', backgroundColor: `rgb(${dmc.rgb})` }}>
-          <h6>{dmc.dmc}</h6>
-          <h6>{dmc.color}</h6>
-        </div>
-        <div>{state}</div>
-      </div>
-    );
-  });
-
-}
-
-
-
-
-
-
-const Project = () => {
-  //metallics
-  const metallics = [
-    {
-      type: "PB",
-      number: "05",
-      patterns: "French Kitchen Garden",
-      color: "Black"
-    },
-    {
-      type: "PB",
-      number: "25",
-      patterns: "French Kitchen Garden",
-      color: "Old Gld"
-    },
-    { type: "SP", number: "051", patterns: "French Kitchen Garden" },
-    { type: "SP", number: "068", patterns: "French Kitchen Garden" }
-  ];
-  //French Kitchen Garden Beads
-  const beads = [
-    { number: "0057", patterns: "French Kitchen Garden" },
-    { number: "0060", patterns: "French Kitchen Garden" },
-    { number: "0501", patterns: "French Kitchen Garden" },
-    { number: "0747", patterns: "French Kitchen Garden" },
-    { number: "0779", patterns: "French Kitchen Garden" },
-    { number: "0832", patterns: "French Kitchen Garden" },
-    { number: "0922", patterns: "French Kitchen Garden" },
-    { number: "1790", patterns: "French Kitchen Garden" },
-    { number: "1812", patterns: "French Kitchen Garden" },
-    { number: "1816", patterns: "French Kitchen Garden" }
-  ];
-
-  //  French Kitchen Garden Silks
-  const silks = [
-    {
-      number: 210,
-      brand: "Gloriana",
-      color: "Silver Green",
-      dmc: 3808,
-      rgb: [2, 50, 68],
-      dark: true
-    },
-    {
-      number: 193,
-      brand: "Gloriana",
-      color: "Copper",
-      dmc: 3808,
-      rgb: [2, 50, 68],
-      dark: true
-    },
-    {
-      number: 17,
-      brand: "Gloriana",
-      color: "Deep Blue Sea",
-      dmc: 3808,
-      rgb: [2, 50, 68],
-      dark: true
-    },
-    {
-      number: 49,
-      brand: "Gloriana",
-      color: "Wood Pond",
-      dmc: 928,
-      rgb: [183, 192, 184]
-    },
-    {
-      number: 48,
-      brand: "Gloriana",
-      color: "Spanish Moss",
-      dmc: 732,
-      rgb: [148, 140, 54],
-      dark: false
-    },
-    {
-      number: 206,
-      brand: "Gloriana",
-      color: "Olivine",
-      dmc: 936,
-      rgb: [76, 72, 39],
-      dark: true
-    },
-    {
-      number: 208,
-      brand: "Gloriana",
-      color: "Chocolat",
-      dmc: 898,
-      rgb: [73, 42, 19],
-      dark: true
-    },
-    {
-      number: 93,
-      brand: "Gloriana",
-      color: "Midnight",
-      dmc: "none",
-      dark: false
-    },
-    {
-      number: 113,
-      brand: "Gloriana",
-      color: "Autumn Arbor",
-      dmc: "none",
-      dark: false
-    },
-    {
-      number: 131,
-      brand: "Gloriana",
-      color: "Sable",
-      dmc: "none",
-      dark: false
-    },
-    {
-      number: 195,
-      brand: "Gloriana",
-      color: "Delicate Teal",
-      dmc: 3811,
-      dark: false
-    },
-    {
-      number: 213,
-      brand: "Gloriana",
-      color: "Thistle Patch",
-      dmc: "none",
-      dark: false
-    },
-    //Dinky Dyes
-    {
-      number: 104,
-      brand: "Dinky Dyes",
-      color: "True Blue",
-      dmc: 312,
-      dark: false
-    },
-    {
-      number: 106,
-      brand: "Dinky Dyes",
-      color: "Billabong",
-      dmc: 825,
-      rgb: [101, 136, 193],
-      dark: false
-    },
-    {
-      number: 144,
-      brand: "Dinky Dyes",
-      color: "Matilda",
-      dmc: 3820,
-      rgb: [48, 68, 56],
-      dark: true
-    },
-    {
-      number: 162,
-      brand: "Dinky Dyes",
-      color: "Pindi",
-      dmc: 3346,
-      rgb: [64, 106, 58],
-      dark: true
-    },
-    {
-      number: 194,
-      brand: "Dinky Dyes",
-      color: "Jungle Green",
-      dmc: 500,
-      rgb: [48, 68, 56],
-      dark: true
-    },
-    {
-      number: 199,
-      brand: "Dinky Dyes",
-      color: "Matilda",
-      dmc: 3778,
-      rgb: [48, 68, 56],
-      dark: true
-    },
-    {
-      number: 201,
-      brand: "Dinky Dyes",
-      color: "Matilda",
-      dmc: 500,
-      rgb: [48, 68, 56],
-      dark: true
-    },
-    //Caron Waterlilies
-    {
-      number: 66,
-      brand: "Caron Waterlilies",
-      color: "Jade",
-      dmc: 988,
-      rgb: [115, 139, 91],
-      dark: false
-    },
-    {
-      number: 183,
-      brand: "Caron Waterlilies",
-      color: "Santa Fe",
-      dmc: 722,
-      rgb: [0, 0, 0],
-      dark: true
-    },
-    {
-      number: 139,
-      brand: "Caron WaterFlowers",
-      color: "Kelp",
-      dmc: "none",
-      dark: false
-    },
-    {
-      number: 165,
-      brand: "Caron Waterflowers",
-      color: "Granite",
-      dmc: 415,
-      rgb: [199, 192, 119],
-      dark: false
-    }
-  ];
+  // const projectDmc = ({ dmcs, addDmc, state }) => {
+  //   return dmcs.map((dmc) => {
+  //     return (
+  //       <div className="item" key={dmc.number}>
+  //         <div className="right floated content">
+  //           <button className="ui button" onClick={() => selectDmc(dmc)}>
+  //             View Detail
+  // 					</button>
+  //         </div>
+  //         <div className="content" style={{ padding: '1rem', backgroundColor: `rgb(${dmc.rgb})` }}>
+  //           <h6>{dmc.dmc}</h6>
+  //           <h6>{dmc.color}</h6>
+  //         </div>
+  //         <div>{state}</div>
+  //       </div>
+  //     );
+  //   });
+  // }
 
   const projectSilks = silks.map(silk => {
     return (
@@ -282,9 +61,18 @@ const Project = () => {
       />
     );
   });
+  const projectDMC = dmc.map(dmc => {
+    return (
+      <MetallicItem
+        key={`${dmc.number}${metallic.patterns}`}
+        number={dmc.number}
+        patterns={dmc.patterns}
+      />
+    );
+  });
 
   return (
-    <Grid
+    <GridprojectMetallics
       container
       direction="column"
       style={{ marginTop: "25px", padding: "25px" }}
@@ -343,6 +131,11 @@ const Project = () => {
         </Grid>
       </Grid>
     </Grid>
+
   );
 };
-export default Project;
+
+const mapDispatchToProps = dispatch => ({
+  setcurrentBeads: bead => dispatch(setCurrentBeads(bead))
+});
+export default connect(null, mapDispatchToProps)(Project);
